@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cadastro - Plataforma Poisson</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Inter", sans-serif;
-      background: #1e293b;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      background: #f1f5f9;
-      width: 360px;
-      padding: 32px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-
-    h1 {
-      font-family: "Montserrat", sans-serif;
-      margin-bottom: 8px;
-      color: #2563eb;
-      font-size: 28px;
-    }
-
-    p {
-      margin-top: 0;
-      margin-bottom: 24px;
-      color: #475569;
-    }
-
-    input {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 16px;
-      border-radius: 8px;
-      border: 1px solid #cbd5e1;
-      font-size: 14px;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      background: #2563eb;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    button:hover { background: #1d4ed8; }
-
-    .toggle {
-      margin-top: 16px;
-      font-size: 14px;
-      color: #475569;
-    }
-
-    .toggle a {
-      color: #2563eb;
-      font-weight: 600;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Plataforma Poisson</title>
+    <link rel="stylesheet" href="style/cadastro.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Cadastro</h1>
-    <p>Crie sua conta para acessar a plataforma</p>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
 
-    <input type="text" placeholder="Nome completo" />
-    <input type="email" placeholder="Email" />
-    <input type="password" placeholder="Senha" />
-    <input type="password" placeholder="Confirmar senha" />
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+        </ul>
 
-    <button>Cadastrar</button>
+        <a href="login.html" class="btn-login">Login</a>
+    </nav>
 
-    <div class="toggle">
-      Já tem conta? <a href="login.html">Entrar</a>
-    </div>
-  </div>
+    <!-- MAIN -->
+    <main>
+        <div class="form-container">
+            <h1>Cadastro</h1>
+            <p>Crie sua conta para acessar a plataforma</p>
+
+            <input type="text" placeholder="Nome completo">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Senha">
+            <input type="password" placeholder="Confirmar senha">
+
+            <button class="btn-submit">Cadastrar</button>
+
+            <div class="toggle">
+                Já tem conta? <a href="login.html">Entrar</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h3>Empresa</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Documentação</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <ul>
+                    <li>Email: contato@empresa.com</li>
+                    <li>Telefone: (00) 0000-0000</li>
+                </ul>
+
+                <div class="social">
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Nome da Empresa. Todos os direitos reservados.
+        </div>
+    </footer>
 
 </body>
 </html>

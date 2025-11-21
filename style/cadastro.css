@@ -1,3 +1,4 @@
+/* RESET BASE */
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,7 @@
     font-size: 62.5%;
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -17,6 +17,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,14 +28,12 @@ body {
     margin-top: 50px;
 }
 
-/* LOGO */
 .logo {
     color: #fff;
     font-size: 1.8rem;
     font-weight: bold;
 }
 
-/* LINKS */
 .nav-links {
     display: flex;
     gap: 24px;
@@ -44,14 +43,13 @@ body {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.8rem
+    font-size: 1.8rem;
 }
 
 .nav-links a:hover {
-    color: #fff;
+    color: #05F283;
 }
 
-/* BOTÃO LOGIN */
 .btn-login {
     padding: 8px 16px;
     border: 1px solid #05F283;
@@ -68,56 +66,85 @@ body {
     color: #000;
 }
 
+/* MAIN */
 main {
-    color: #fff;
     flex: 1;
-}
-
-.main-texto {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4rem 0;
 }
 
-.main-texto>h1 {
-    font-size: 7.6rem;
-    /* 56px */
-    line-height: 1.1;
-    font-weight: 800;
+.form-container {
+    background: #f1f5f9;
+    width: 360px;
+    padding: 3.2rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
 }
 
-.main-texto>h2 {
-    font-size: 4.2rem;
-    /* 22px */
-    line-height: 1.3;
-    font-weight: 600;
+/* TEXTOS DO FORM */
+.form-container h1 {
+    font-size: 2.8rem;
+    color: #000;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
 }
 
-.main-texto>p {
-    font-size: 2.6rem;
-    /* 16px */
-    line-height: 1.5;
-    color: #ccc;
+.form-container p {
+    font-size: 1.6rem;
+    color: #475569;
+    margin-bottom: 2.4rem;
 }
 
-.btn-chamada {
-    padding: 8px 16px;
-    border: 1px solid #05F283;
+/* INPUTS */
+.form-container input {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 1.6rem;
+    border-radius: 0.8rem;
+    border: 1px solid #cbd5e1;
+    font-size: 1.6rem;
+}
+
+/* BOTÃO */
+.btn-submit {
+    width: 100%;
+    padding: 1.2rem;
     background: #05F283;
+    border: none;
+    border-radius: 0.8rem;
     color: #000D08;
-    border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: 700;
     cursor: pointer;
-    font-size: 1.8rem;
-    margin-top: 10px;
-    margin-left: 10px;
+    transition: 0.2s;
 }
 
+.btn-submit:hover {
+    background: #03c86d;
+}
+
+/* TOGGLE */
+.toggle {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    color: #475569;
+}
+
+.toggle a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* FOOTER */
 .footer {
     background: #000;
     color: #ccc;
     padding: 4rem 0 2rem;
-    font-family: Arial, sans-serif;
 }
 
 .footer-container {
@@ -138,7 +165,6 @@ main {
 
 .footer-col ul {
     list-style: none;
-    padding: 0;
 }
 
 .footer-col ul li {
