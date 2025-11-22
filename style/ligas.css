@@ -1,5 +1,5 @@
 /* ====== CONTAINER GERAL ====== */
-main {
+.league-container {
     width: 100%;
     max-width: 1200px;
     margin: 4rem auto;
@@ -25,7 +25,7 @@ main {
     font-weight: 600;
 }
 
-/* ====== TABELA DO CAMPEONATO (tabela grande da esquerda) ====== */
+/* ====== TABELA DO CAMPEONATO ====== */
 .tabela-campeonato {
     grid-row: span 2;
 }
@@ -33,7 +33,7 @@ main {
 .tabela-campeonato table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.6rem;
+    font-size: 6.6rem;
     color: #fff;
 }
 
@@ -55,11 +55,18 @@ main {
 }
 
 /* ====== TABELA DE CONFRONTOS ====== */
+.confrontos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .confrontos table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.6rem;
+    font-size: 6.6rem;
     color: #fff;
+    flex: 1;
 }
 
 .confrontos th {
@@ -80,10 +87,14 @@ main {
 }
 
 /* ====== TABELA DE MÉDIA DE GOLS ====== */
+.media-gols {
+    grid-column: 1 / span 2; /* ocupa toda a largura */
+}
+
 .media-gols table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.5rem;
+    font-size: 6.6rem;
     color: #fff;
 }
 
@@ -92,11 +103,23 @@ main {
     color: #05F283;
     font-weight: 700;
     border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+/* ALINHAR APENAS O TÍTULO "Time" À ESQUERDA */
+.media-gols th:first-child {
+    text-align: left;
 }
 
 .media-gols td {
     padding: 0.8rem;
     border-bottom: 1px solid #222;
+    text-align: center;
+}
+
+/* ALINHAR APENAS O NOME DOS TIMES */
+.media-gols td:first-child {
+    text-align: left;
 }
 
 .media-gols tr:hover {
@@ -105,12 +128,15 @@ main {
 
 /* ====== RESPONSIVIDADE ====== */
 @media (max-width: 900px) {
-    main {
+    .league-container {
         grid-template-columns: 1fr;
     }
 
     .tabela-campeonato {
         grid-row: auto;
     }
-}
 
+    .media-gols {
+        grid-column: 1;
+    }
+}
