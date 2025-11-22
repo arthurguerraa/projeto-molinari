@@ -1,0 +1,116 @@
+/* ====== CONTAINER GERAL ====== */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 3rem;
+}
+
+/* ====== BOX PADRÃO ====== */
+.box {
+    background: #0D0E0F;
+    border: 1px solid #2a2a2a;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+}
+
+.box h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* ====== TABELA DO CAMPEONATO (tabela grande da esquerda) ====== */
+.tabela-campeonato {
+    grid-row: span 2;
+}
+
+.tabela-campeonato table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.tabela-campeonato th {
+    text-align: left;
+    padding: 1rem 0.8rem;
+    font-weight: 700;
+    border-bottom: 1px solid #444;
+    color: #05F283;
+}
+
+.tabela-campeonato td {
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid #222;
+}
+
+.tabela-campeonato tr:hover {
+    background: #1a1a1a;
+}
+
+/* ====== TABELA DE CONFRONTOS ====== */
+.confrontos table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.confrontos th {
+    text-align: left;
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid #444;
+    font-weight: 700;
+    color: #05F283;
+}
+
+.confrontos td {
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid #222;
+}
+
+.confrontos tr:hover {
+    background: #1a1a1a;
+}
+
+/* ====== TABELA DE MÉDIA DE GOLS ====== */
+.media-gols table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.media-gols th {
+    padding: 0.8rem;
+    color: #05F283;
+    font-weight: 700;
+    border-bottom: 1px solid #444;
+}
+
+.media-gols td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #222;
+}
+
+.media-gols tr:hover {
+    background: #1a1a1a;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .tabela-campeonato {
+        grid-row: auto;
+    }
+}
+
