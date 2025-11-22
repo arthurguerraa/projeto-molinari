@@ -1,24 +1,3 @@
-/* === Reset & root sizing (1rem = 10px) === */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
-
-/* Make body stretch so footer can stay at bottom */
-html,
-body {
-    height: 100%;
-}
-
-/* === Base / layout geral (mesma base do index) === */
-body {
-    display: flex;
-    flex-direction: column;
-    background: #121212;
-    font-family: Arial, sans-serif;
-}
 
 /* === MAIN (conteúdo centralizado e flexível) === */
 main {

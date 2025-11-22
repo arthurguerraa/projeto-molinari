@@ -1,0 +1,101 @@
+ 
+    /* ===== CONTAINER PRINCIPAL ===== */
+
+    main{
+      width: 90%;
+      max-width: 1200px;
+      margin: 6rem auto;
+      color: #fff;
+      flex: 1;
+    }
+
+    /* ===== CARD DO USUÁRIO ===== */
+
+    .user-card {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      /* NOVA COR (opção 1) */
+      background: #05231A;
+
+      padding: 2rem;
+      border-radius: 1rem;
+
+      /* borda neon */
+      border: 1px solid #05F283;
+    }
+
+    .user-card h1 {
+      font-size: 1.8rem;
+      color: #E8FFF4;
+    }
+
+    .user-card p {
+      font-size: 1.4rem;
+      color: #CFFFE7;
+    }
+
+    /* Avatar */
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #0D0D0D;
+      border: 2px solid #05F283;
+    }
+
+    /* Botão editar */
+    .btn-edit {
+      margin-top: 1rem;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.6rem;
+      background: #05F283;
+      border: none;
+      color: #000D08;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn-edit:hover {
+      background: #04d873;
+    }
+
+    /* ===== SEÇÕES ===== */
+
+    .profile-section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
+      color: #05F283;
+    }
+
+    /* Grid das ligas/times */
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.6rem;
+    }
+
+    /* ===== CARDS ===== */
+
+    .card {
+      /* NOVA COR (opção 1) */
+      background: #05231A;
+
+      padding: 1.6rem;
+      border-radius: 0.8rem;
+      text-align: center;
+      font-size: 1.8rem;
+
+      border: 1px solid #05F283;
+      color: #E8FFF4;
+
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 12px rgba(5, 242, 131, 0.25);
+    }
