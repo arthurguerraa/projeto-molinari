@@ -2,218 +2,237 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil - Plataforma Poisson</title>
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/profile.css">
-    <style>
-      .perfil-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 6rem auto;
-    color: #fff;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Plataforma Poisson</title>
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/profile.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 62.5%;
+    }
 
-/* Card principal do usuário */
-.user-card {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    background: #00140F;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin-bottom: 4rem;
-    border: 1px solid #05F283;
-}
+    html,
+    body {
+      height: 100%;
+    }
 
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
+    body {
+      display: flex;
+      flex-direction: column;
+      background: #000D08;
+      font-family: Arial, sans-serif;
+    }
 
-/* Botão editar */
-.btn-edit {
-    margin-top: 1rem;
-    padding: 0.8rem 1.6rem;
-    font-size: 1.6rem;
-    background: #05F283;
-    border: none;
-    color: #000D08;
-    border-radius: 0.8rem;
-    cursor: pointer;
-}
+    .perfil-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 6rem auto;
+      color: #fff;
+    }
 
-/* Títulos */
-.profile-section h2 {
-    font-size: 2.4rem;
-    margin-bottom: 1.6rem;
-}
+    /* Card principal do usuário */
+    .user-card {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      background: #00140F;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 4rem;
+      border: 1px solid #05F283;
+    }
 
-/* GRID de cards */
-.grid-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1.6rem;
-}
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
 
-.card {
-    background: #00140F;
-    padding: 1.6rem;
-    border-radius: 0.8rem;
-    text-align: center;
-    font-size: 1.8rem;
-    border: 1px solid #05F283;
-}
+    /* Botão editar */
+    .btn-edit {
+      margin-top: 1rem;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.6rem;
+      background: #05F283;
+      border: none;
+      color: #000D08;
+      border-radius: 0.8rem;
+      cursor: pointer;
+    }
 
-/* Histórico */
-.history-list p {
-    background: #00140F;
-    padding: 1.2rem;
-    border-radius: 0.8rem;
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    border: 1px solid #05F283;
-}
+    /* Títulos */
+    .profile-section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
 
-    </style>
+    /* GRID de cards */
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.6rem;
+    }
+
+    .card {
+      background: #00140F;
+      padding: 1.6rem;
+      border-radius: 0.8rem;
+      text-align: center;
+      font-size: 1.8rem;
+      border: 1px solid #05F283;
+    }
+
+    /* Histórico */
+    .history-list p {
+      background: #00140F;
+      padding: 1.2rem;
+      border-radius: 0.8rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      border: 1px solid #05F283;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">LOGO</div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+    </ul>
+
+    <a href="login.html" class="btn-login">Logout</a>
+  </nav>
+
+  <main class="perfil-container">
+
+    <!-- Card do usuário -->
+    <section class="user-card">
+      <img src="https://via.placeholder.com/100" class="avatar">
+      <div>
+        <h1>Arthur Guerra</h1>
+        <p>Email: usuario@email.com</p>
+        <button class="btn-edit">Editar Perfil</button>
+      </div>
+    </section>
+
+    <!-- Ligas favoritas -->
+    <section class="profile-section">
+      <h2>Ligas Favoritas</h2>
+      <div class="grid-cards">
+        <div class="card">Premier League</div>
+        <div class="card">La Liga</div>
+        <div class="card">Serie A</div>
+        <div class="card">Bundesliga</div>
+      </div>
+    </section>
+
+    <!-- Times favoritos -->
+    <section class="profile-section">
+      <h2>Times Favoritos</h2>
+      <div class="grid-cards">
+        <div class="card">Manchester City</div>
+        <div class="card">Arsenal</div>
+        <div class="card">Barcelona</div>
+      </div>
+    </section>
+
+    <!-- Mercados favoritos -->
+    <section class="profile-section">
+      <h2>Mercados Favoritos</h2>
+      <div class="grid-cards">
+        <div class="card">Over 1.5</div>
+        <div class="card">Over 2.5</div>
+        <div class="card">BTTS</div>
+        <div class="card">Under 2.5</div>
+      </div>
+    </section>
+
+    <!-- Histórico de análises -->
+    <section class="profile-section">
+      <h2>Histórico de Análises</h2>
+      <div class="history-list">
+        <p>⚽ Arsenal vs Chelsea — Over 2.5: <strong>63%</strong></p>
+        <p>⚽ Barcelona vs Sevilla — BTTS: <strong>58%</strong></p>
+        <p>⚽ Bayern vs Dortmund — Under 3.5: <strong>72%</strong></p>
+      </div>
+    </section>
+
+    <!-- Estatísticas do usuário -->
+    <section class="profile-section">
+      <h2>Suas Estatísticas</h2>
+      <div class="grid-cards">
+        <div class="card">🔎 48 análises geradas</div>
+        <div class="card">⚽ Mercado mais usado: Over 2.5</div>
+        <div class="card">🏆 Liga mais consultada: Premier League</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Imprensa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Suporte</h3>
+        <ul>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Documentação</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <ul>
+          <li>Email: contato@empresa.com</li>
+          <li>Telefone: (00) 0000-0000</li>
         </ul>
 
-        <a href="login.html" class="btn-login">Logout</a>
-    </nav>
-
-    <main class="perfil-container">
-
-        <!-- Card do usuário -->
-        <section class="user-card">
-            <img src="https://via.placeholder.com/100" class="avatar">
-            <div>
-                <h1>Arthur Guerra</h1>
-                <p>Email: usuario@email.com</p>
-                <button class="btn-edit">Editar Perfil</button>
-            </div>
-        </section>
-
-        <!-- Ligas favoritas -->
-        <section class="profile-section">
-            <h2>Ligas Favoritas</h2>
-            <div class="grid-cards">
-                <div class="card">Premier League</div>
-                <div class="card">La Liga</div>
-                <div class="card">Serie A</div>
-                <div class="card">Bundesliga</div>
-            </div>
-        </section>
-
-        <!-- Times favoritos -->
-        <section class="profile-section">
-            <h2>Times Favoritos</h2>
-            <div class="grid-cards">
-                <div class="card">Manchester City</div>
-                <div class="card">Arsenal</div>
-                <div class="card">Barcelona</div>
-            </div>
-        </section>
-
-        <!-- Mercados favoritos -->
-        <section class="profile-section">
-            <h2>Mercados Favoritos</h2>
-            <div class="grid-cards">
-                <div class="card">Over 1.5</div>
-                <div class="card">Over 2.5</div>
-                <div class="card">BTTS</div>
-                <div class="card">Under 2.5</div>
-            </div>
-        </section>
-
-        <!-- Histórico de análises -->
-        <section class="profile-section">
-            <h2>Histórico de Análises</h2>
-            <div class="history-list">
-                <p>⚽ Arsenal vs Chelsea — Over 2.5: <strong>63%</strong></p>
-                <p>⚽ Barcelona vs Sevilla — BTTS: <strong>58%</strong></p>
-                <p>⚽ Bayern vs Dortmund — Under 3.5: <strong>72%</strong></p>
-            </div>
-        </section>
-
-        <!-- Estatísticas do usuário -->
-        <section class="profile-section">
-            <h2>Suas Estatísticas</h2>
-            <div class="grid-cards">
-                <div class="card">🔎 48 análises geradas</div>
-                <div class="card">⚽ Mercado mais usado: Over 2.5</div>
-                <div class="card">🏆 Liga mais consultada: Premier League</div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-
-            <div class="footer-col">
-                <h3>Empresa</h3>
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Carreiras</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Imprensa</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Suporte</h3>
-                <ul>
-                    <li><a href="#">Ajuda</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Documentação</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Privacidade</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Contato</h3>
-                <ul>
-                    <li>Email: contato@empresa.com</li>
-                    <li>Telefone: (00) 0000-0000</li>
-                </ul>
-
-                <div class="social">
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Facebook</a>
-                </div>
-            </div>
-
+        <div class="social">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a>
         </div>
+      </div>
 
-        <div class="footer-bottom">
-            © 2025 Nome da Empresa. Todos os direitos reservados.
-        </div>
-    </footer>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Nome da Empresa. Todos os direitos reservados.
+    </div>
+  </footer>
 
 </body>
+
 </html>
