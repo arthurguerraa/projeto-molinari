@@ -32,6 +32,10 @@
 
     /* ===== BORDAS ===== */
     --cor-borda: #05F283;
+
+    /* ===== FUNDO FORMULÁRIO ===== */
+    --cor-card-claro: #f1f5f9;
+
 }
 
 html,

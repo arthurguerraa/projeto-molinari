@@ -1,7 +1,5 @@
-
-
 main {
-    color: #fff;
+    color: var(--cor-branco);
     flex: 1;
 }
 
@@ -12,36 +10,32 @@ main {
     align-items: center;
 }
 
-.main-texto>h1 {
+.main-texto > h1 {
     font-size: 7.6rem;
-    /* 56px */
     line-height: 1.1;
     font-weight: 800;
 }
 
-.main-texto>h2 {
+.main-texto > h2 {
     font-size: 4.2rem;
-    /* 22px */
     line-height: 1.3;
     font-weight: 600;
 }
 
-.main-texto>p {
+.main-texto > p {
     font-size: 2.6rem;
-    /* 16px */
     line-height: 1.5;
-    color: #ccc;
+    color: var(--cor-texto-cinza); /* #ccc */
 }
 
 .btn-chamada {
     padding: 8px 16px;
-    border: 1px solid #05F283;
-    background: #05F283;
-    color: #000D08;
+    border: 1px solid var(--cor-verde);
+    background: var(--cor-verde);
+    color: var(--cor-navbar); /* #000D08 → cor escura mais próxima */
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.8rem;
     margin-top: 10px;
     margin-left: 10px;
 }
-

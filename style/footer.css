@@ -1,6 +1,6 @@
 .footer {
-    background: #0D0E0F;
-    color: #ccc;
+    background: var(--cor-footer);
+    color: var(--cor-texto-cinza);
     padding: 4rem 0 2rem;
     font-family: Arial, sans-serif;
 }
@@ -16,7 +16,7 @@
 }
 
 .footer-col h3 {
-    color: #fff;
+    color: var(--cor-branco);
     font-size: 1.8rem;
     margin-bottom: 1.4rem;
 }
@@ -32,12 +32,12 @@
 }
 
 .footer-col ul li a {
-    color: #ccc;
+    color: var(--cor-texto-cinza);
     text-decoration: none;
 }
 
 .footer-col ul li a:hover {
-    color: #fff;
+    color: var(--cor-branco);
 }
 
 .social {
@@ -47,20 +47,20 @@
 }
 
 .social a {
-    color: #ccc;
+    color: var(--cor-texto-cinza);
     text-decoration: none;
     font-size: 1.4rem;
 }
 
 .social a:hover {
-    color: #fff;
+    color: var(--cor-branco);
 }
 
 .footer-bottom {
     margin-top: 3rem;
     text-align: center;
     font-size: 1.3rem;
-    color: #777;
-    border-top: 1px solid #333;
+    color: var(--cor-texto-cinza); /* substituindo #777 pelo mais próximo */
+    border-top: 1px solid var(--cor-navbar); /* substituindo #333 pelo mais próximo */
     padding-top: 1.6rem;
 }

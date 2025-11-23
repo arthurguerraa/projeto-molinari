@@ -1,4 +1,3 @@
-
 /* === MAIN (conteúdo centralizado e flexível) === */
 main {
     flex: 1;
@@ -8,10 +7,10 @@ main {
     padding: 4rem 1.6rem;
 }
 
-/* Card do formulário (estética alinhada com site) */
+/* Card do formulário */
 .form-card {
     width: 36rem;
-    background: #f1f5f9;
+    background: var(--cor-card-claro); /* #f1f5f9 */
     padding: 3.2rem;
     border-radius: 1.6rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -23,14 +22,14 @@ main {
     font-family: "Montserrat", sans-serif;
     font-size: 2.6rem;
     margin-bottom: 8px;
-    color: #000D08;
+    color: var(--cor-navbar); /* cor mais próxima do #000D08 */
 }
 
 .form-card p {
     font-size: 1.6rem;
     margin-top: 0;
     margin-bottom: 24px;
-    color: #000D08;
+    color: var(--cor-navbar);
 }
 
 /* Inputs */
@@ -39,24 +38,24 @@ main {
     padding: 12px;
     margin-bottom: 16px;
     border-radius: 8px;
-    background: #fff;
-    color: #000D08;
+    background: var(--cor-branco);
+    color: var(--cor-navbar);
     font-size: 1.4rem;
 }
 
 /* Placeholder mais claro */
 .form-card input::placeholder {
-    color: #94a3b8;
+    color: var(--cor-texto-cinza);
 }
 
 /* Botão principal */
 .btn-submit {
     width: 100%;
     padding: 12px;
-    background: #05f283;
+    background: var(--cor-verde);
     border: none;
     border-radius: 8px;
-    color: #000;
+    color: var(--cor-bg); /* preto mais próximo do #000 */
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
@@ -64,20 +63,19 @@ main {
 }
 
 .btn-submit:hover {
-    background: #03c86d;
+    background: var(--cor-verde-hover);
 }
 
 /* Link auxiliar */
 .toggle {
     margin-top: 1.6rem;
     font-size: 1.4rem;
-    color: #000D08;
+    color: var(--cor-navbar);
 }
 
 .toggle a {
-    color: #2563eb;
+    color: var(--cor-verde); /* substitui azul inexistente */
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
-
 }

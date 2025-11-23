@@ -1,85 +1,81 @@
-
- main {
-    color: #fff;
+main {
+    color: var(--cor-branco);
     flex: 1;
 }
 
- /* === CONTAINER LOGIN === */
- .container {
-     background: #f1f5f9;
-     width: 360px;
-     padding: 32px;
-     border: 2px solid white;
-     border-radius: 16px;
-     margin: 60px auto;
-     /* centraliza sem interferir no footer */
-     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-     text-align: center;
- }
+/* === CONTAINER LOGIN === */
+.container {
+    background: var(--cor-card-claro); /* era #f1f5f9 */
+    width: 360px;
+    padding: 32px;
+    border: 2px solid var(--cor-branco); /* era white */
+    border-radius: 16px;
+    margin: 60px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* NÃO há var para sombra */
+    text-align: center;
+}
 
- .container h1 {
-     font-family: "Montserrat", sans-serif;
-     font-size: 2.6rem;
-     margin-bottom: 8px;
-     color: #000D08;
- }
+.container h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+    color: var(--cor-card); /* era #000D08 — cor mais próxima escura do tema */
+}
 
- .container p {
+.container p {
     font-size: 1.6rem;
-     margin-top: 0;
-     margin-bottom: 24px;
-     color: #000D08;
- }
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: var(--cor-card); /* mesma lógica */
+}
 
- input {
-     width: 100%;
-     padding: 12px;
-     margin-bottom: 16px;
-     border-radius: 8px;
-     background: #fff;
-     color: #000D08;
-     font-size: 1.4rem;
- }
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: var(--cor-branco); /* era #fff */
+    color: var(--cor-card); /* texto escuro */
+    font-size: 1.4rem;
+    border: 1px solid var(--cor-input-borda); /* ADICIONEI para manter padrão */
+}
 
- input::placeholder {
-     color: #94a3b8;
- }
+input::placeholder {
+    color: var(--cor-texto-cinza); /* era #94a3b8 — esta é a mais próxima */
+}
 
- button {
-     width: 100%;
-     padding: 12px;
-     background: #05f283;
-     border: none;
-     border-radius: 8px;
-     color: #000;
-     font-size: 16px;
-     font-weight: 700;
-     cursor: pointer;
-     transition: 0.2s;
- }
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--cor-verde); /* era #05f283 */
+    border: none;
+    border-radius: 8px;
+    color: var(--cor-navbar); /* texto preto → var escura mais próxima */
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
 
- button:hover {
-     background: #03c86d;
- }
+button:hover {
+    background: var(--cor-verde-hover); /* era #03c86d */
+}
 
- .resetsenha{
+.resetsenha {
     margin-top: 10px;
     font-size: 2.2rem;
- }
+}
 
- .toggle {
-     margin-top: 16px;
-     font-size: 1.4rem;
-     color: #000D08;
- }
+.toggle {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    color: var(--cor-card); /* era #000D08 */
+}
 
- .toggle a,
- .container a {
-     color: #2563eb;
-     font-size: 1.4rem;
-     font-weight: bold;
-     text-decoration: none;
-     
- }
-
- 
+.toggle a,
+.container a {
+    color: var(--cor-verde); /* era #2563eb — azul → substituição mais próxima */
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+}
