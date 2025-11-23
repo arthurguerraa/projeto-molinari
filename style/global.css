@@ -5,6 +5,35 @@
     font-size: 62.5%;
 }
 
+:root {
+    /* ===== CORES PRINCIPAIS ===== */
+    --cor-bg: #121212;              /* fundo do site */
+    --cor-card: #05231A;            /* cards verdes escuros */
+    --cor-verde: #05F283;           /* verde neon */
+    --cor-verde-hover: #03c86d;     /* hover do verde */
+    --cor-branco: #ffffff;
+    --cor-texto: #E8FFF4;
+
+    /* ===== CORES DE TEXTO ===== */
+    --cor-texto-suave: #CFFFE7;
+    --cor-texto-cinza: #ccc;
+
+    /* ===== NAVBAR & FOOTER ===== */
+    --cor-navbar: #0D0E0F;
+    --cor-footer: #0D0E0F;
+
+    /* ===== INPUTS ===== */
+    --cor-input-bg: #0D0E0F;
+    --cor-input-borda: #05F283;
+
+    /* ===== ALERTAS ===== */
+    --cor-danger: #8b0000;
+    --cor-danger-borda: #ff4d4d;
+
+    /* ===== BORDAS ===== */
+    --cor-borda: #05F283;
+}
+
 html,
 body {
     height: 100%;
