@@ -35,7 +35,7 @@ input {
     margin-bottom: 1.6rem;
     border-radius: 0.8rem;
     background: var(--fundo-campo); 
-    color: var(--texto-principal); 
+    color: var(--texto-secundario); 
     font-size: 1.4rem;
     border: 1px solid var(--borda-sutil); 
 }

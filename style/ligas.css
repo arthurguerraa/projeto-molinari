@@ -12,14 +12,14 @@
 
 /* ====== BOX PADRÃO ====== */
 .box {
-    background: var(--cor-navbar); /* era #0D0E0F */
-    border: 1px solid var(--cor-borda); /* melhor correspondente */
+    background: var(--fundo-cartao); 
+    border: 1px solid var(--borda-sutil); 
     border-radius: 1.6rem;
     padding: 2.4rem;
 }
 
 .box h2 {
-    color: var(--cor-branco);
+    color: var(--texto-principal);
     font-size: 2rem;
     margin-bottom: 2rem;
     font-weight: 600;
@@ -33,25 +33,25 @@
 .tabela-campeonato table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.6rem;
-    color: var(--cor-branco);
+    font-size: 6.6rem;
+    color: var(--texto-principal);
 }
 
 .tabela-campeonato th {
     text-align: left;
     padding: 1rem 0.8rem;
     font-weight: 700;
-    border-bottom: 1px solid var(--cor-texto-cinza); /* era #444 */
-    color: var(--cor-verde);
+    border-bottom: 1px solid var(--borda-sutil);
+    color: var(--texto-principal);
 }
 
 .tabela-campeonato td {
     padding: 1rem 0.8rem;
-    border-bottom: 1px solid var(--cor-input-bg); /* era #222 — mais próximo */
+    border-bottom: 1px solid var(--borda-sutil);
 }
 
 .tabela-campeonato tr:hover {
-    background: var(--cor-card); /* era #1a1a1a → usei cor mais próxima */
+    background: var(--cor-primaria-hover); 
 }
 
 /* ====== TABELA DE CONFRONTOS ====== */
@@ -64,26 +64,26 @@
 .confrontos table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.6rem;
-    color: var(--cor-branco);
+    font-size: 6.6rem;
+    color: var(--texto-principal);
     flex: 1;
 }
 
 .confrontos th {
     text-align: left;
     padding: 1rem 0.8rem;
-    border-bottom: 1px solid var(--cor-texto-cinza);
+    border-bottom: 1px solid var(--borda-sutil);
     font-weight: 700;
     color: var(--cor-verde);
 }
 
 .confrontos td {
     padding: 1rem 0.8rem;
-    border-bottom: 1px solid var(--cor-input-bg);
+    border-bottom: 1px solid var(--borda-sutil);
 }
 
 .confrontos tr:hover {
-    background: var(--cor-card);
+    background: var(--cor-primaria-hover);
 }
 
 /* ====== TABELA DE MÉDIA DE GOLS ====== */
@@ -94,15 +94,15 @@
 .media-gols table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.6rem;
-    color: var(--cor-branco);
+    font-size: 6.6rem;
+    color: var(--texto-principal);
 }
 
 .media-gols th {
     padding: 0.8rem;
-    color: var(--cor-verde);
+    color: var(--texto-principal);
     font-weight: 700;
-    border-bottom: 1px solid var(--cor-texto-cinza);
+    border-bottom: 1px solid var(--borda-sutil);
     text-align: center;
 }
 
@@ -113,7 +113,7 @@
 
 .media-gols td {
     padding: 0.8rem;
-    border-bottom: 1px solid var(--cor-input-bg);
+    border-bottom: 1px solid var(--borda-sutil);
     text-align: center;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .media-gols tr:hover {
-    background: var(--cor-card);
+    background: var(--cor-primaria-hover);
 }
 
 /* ====== RESPONSIVIDADE ====== */

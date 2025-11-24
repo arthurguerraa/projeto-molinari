@@ -8,8 +8,8 @@ main {
 }
 
 .form-container {
-    background: var(--cor-card-claro); /* antes: #f1f5f9 */
-    width: 360px;
+    background: var(--fundo-cartao); 
+    width: 36rem;
     padding: 3.2rem;
     border-radius: 1.6rem;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -19,14 +19,14 @@ main {
 /* TEXTOS DO FORM */
 .form-container h1 {
     font-size: 2.8rem;
-    color: var(--cor-input-bg); 
+    color: var(--texto-principal); 
     margin-bottom: 0.8rem;
     font-weight: 700;
 }
 
 .form-container p {
     font-size: 1.6rem;
-    color: var(--cor-input-bg); 
+    color: var(--texto-principal); 
     margin-bottom: 2.4rem;
 }
 
@@ -36,16 +36,17 @@ main {
     padding: 1.2rem;
     margin-bottom: 1.6rem;
     border-radius: 0.8rem;
-    border: 1px solid var(--cor-input-borda); /* antes: #cbd5e1 */
+    border: 1px solid var(--borda-sutil);  
     font-size: 1.6rem;
-    color: var(--cor-input-bg);
+    background: var(--fundo-campo);
+    color: var(--texto-secundario);
 }
 
 /* BOTÃO */
 .btn-submit {
     width: 100%;
     padding: 1.2rem;
-    background: var(--cor-verde); /* antes: #05F283 */
+    background: var(--cor-primaria); 
     border: none;
     border-radius: 0.8rem;
     color: #000D08;
@@ -56,18 +57,18 @@ main {
 }
 
 .btn-submit:hover {
-    background: var(--cor-verde-hover); /* antes: #03c86d */
+    background: var(--cor-primaria-hover); 
 }
 
 /* TOGGLE */
 .toggle {
     margin-top: 1.6rem;
     font-size: 1.4rem;
-    color: var(--cor-input-bg); /* antes: #475569 */
+    color: var(--texto-principal); 
 }
 
 .toggle a {
-    color: #2563eb; /* este azul faz sentido manter */
+    color: #2563eb; 
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: bold;

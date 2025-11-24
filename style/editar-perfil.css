@@ -3,8 +3,8 @@
   width: 90%;
   max-width: 800px;
   margin: 4rem auto;
-  color: var(--cor-branco);
-
+  color: var(--texto-principal);
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,16 +12,16 @@
 
 /* ===== CARD ===== */
 .edit-card {
-  width: 100%;
-  background: var(--cor-card);
+  width: 70%;
+  background: var(--fundo-cartao);
   padding: 2.4rem;
   border-radius: 1rem;
-  border: 1px solid var(--cor-borda);
+  border: 1px solid var(--borda-sutil);
 }
 
 .edit-card h1 {
   font-size: 2.4rem;
-  color: var(--cor-verde);
+  color: var(--texto-principal);
   margin-bottom: 2rem;
 }
 
@@ -37,13 +37,13 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 2px solid var(--cor-borda);
+  border: 2px solid var(--borda-sutil);
 }
 
 .btn-upload {
   display: inline-block;
-  background: var(--cor-verde);
-  color: var(--cor-texto); /* substituindo #000 pelo mais próximo */
+  background: var(--cor-primaria);
+  color: var(--texto-invertido); 
   padding: 0.8rem 1.6rem;
   border-radius: 0.8rem;
   font-size: 1.4rem;
@@ -64,15 +64,16 @@
 
 .edit-form label {
   font-size: 1.6rem;
-  color: var(--cor-texto-suave);
+  color: var(--texto-secundario);
 }
 
 .edit-form input {
   padding: 1rem;
   font-size: 1.6rem;
-  background: var(--cor-branco);
-  border: 1px solid var(--cor-input-borda);
+  background: var(--fundo-campo);
+  border: 1px solid var(--borda-sutil);
   border-radius: 0.6rem;
+  color: var(--texto-secundario);
 }
 
 /* ===== BOTÕES ===== */
@@ -84,32 +85,34 @@
 }
 
 .btn-save {
-  background: var(--cor-verde);
+  background: var(--cor-primaria);
   padding: 1.2rem;
   border: none;
   border-radius: 0.8rem;
   font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
-  color: var(--cor-texto); /* substituindo #000 */
+  color: var(--texto-invertido); /* substituindo #000 */
 }
 
 .btn-cancel {
-  background: transparent;
-  border: 1px solid var(--cor-borda);
+  background: var(--cor-erro);
+  border: 1px solid var(--borda-sutil);
   padding: 1.2rem;
   font-size: 1.6rem;
+  font-weight: bold;
   border-radius: 0.8rem;
-  color: var(--cor-verde);
+  color: var(--texto-invertido);
   cursor: pointer;
 }
 
 .btn-delete {
-  background: var(--cor-danger);
-  border: 1px solid var(--cor-danger-borda);
+  background: var(--cor-erro);
+  border: 1px solid var(--borda-sutil);
   padding: 1.2rem;
   font-size: 1.6rem;
+  font-weight: bold;
   border-radius: 0.8rem;
-  color: var(--cor-branco);
+  color: var(--texto-invertido);
   cursor: pointer;
 }

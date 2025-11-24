@@ -37,6 +37,6 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: var(--fundo-pagina);
     font-family: Arial, sans-serif;
 }
