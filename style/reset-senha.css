@@ -22,7 +22,7 @@ main {
     font-size: 2.8rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
-     color: var(--texto-principal); 
+    color: var(--texto-principal); 
 }
 
 .form-card p {
@@ -34,11 +34,11 @@ main {
 /* Inputs */
 .form-card input {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.6rem;
+    border-radius: 0.8rem;
     background: var(--fundo-campo);
-    color: var(--texto-principal);
+    color: var(--texto-secundario);
     font-size: 1.4rem;
 }
 
