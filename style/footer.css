@@ -1,6 +1,6 @@
 .footer {
-    background: var(--cor-footer);
-    color: var(--cor-texto-cinza);
+    background: var(--fundo-pagina);
+    color: var(--texto-principal);
     padding: 4rem 0 2rem;
     font-family: Arial, sans-serif;
 }
@@ -37,7 +37,7 @@
 }
 
 .footer-col ul li a:hover {
-    color: var(--cor-branco);
+    color: var(--texto-secundario);
 }
 
 .social {
@@ -47,20 +47,20 @@
 }
 
 .social a {
-    color: var(--cor-texto-cinza);
+    color: var(--texto-principal);
     text-decoration: none;
     font-size: 1.4rem;
 }
 
 .social a:hover {
-    color: var(--cor-branco);
+    color: var(--texto-secundario);
 }
 
 .footer-bottom {
     margin-top: 3rem;
     text-align: center;
     font-size: 1.3rem;
-    color: var(--cor-texto-cinza); /* substituindo #777 pelo mais próximo */
-    border-top: 1px solid var(--cor-navbar); /* substituindo #333 pelo mais próximo */
+    color: var(--cor-texto-cinza);
+    border-top: 1px solid var(--borda-sutil); 
     padding-top: 1.6rem;
 }

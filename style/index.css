@@ -1,5 +1,4 @@
 main {
-    color: var(--cor-branco);
     flex: 1;
 }
 
@@ -15,6 +14,7 @@ main {
     margin-top: 2.0rem;
     line-height: 1.1;
     font-weight: 800;
+    color: var(--texto-principal);
 }
 
 .main-texto > h2 {
@@ -22,20 +22,21 @@ main {
     margin-top: 2.0rem;
     line-height: 1.3;
     font-weight: 600;
+    color: var(--texto-principal);
 }
 
 .main-texto > p {
     font-size: 2.6rem;
     margin-top: 2.0rem;
     line-height: 1.5;
-    color: var(--cor-texto-cinza); /* #ccc */
+    color: var(--texto-principal);
 }
 
 .btn-chamada {
     padding: 8px 16px;
-    border: 1px solid var(--cor-verde);
-    background: var(--cor-verde);
-    color: var(--cor-navbar); /* #000D08 → cor escura mais próxima */
+    border: 1px solid var(--cor-primaria);
+    background: var(--cor-primaria);
+    color: var(--texto-invertido); /* #000D08 → cor escura mais próxima */
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.8rem;

@@ -17,12 +17,12 @@ main {
     font-size: 6rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--cor-texto);
+    color: var(--texto-principal);
 }
 
 .descricao {
     font-size: 2.4rem;
-    color: var(--cor-texto-cinza);
+    color: var(--texto-principal);
     max-width: 800px;
     margin: auto;
     line-height: 1.6;
@@ -38,22 +38,21 @@ main {
 }
 
 .card {
-    background: var(--cor-card);  /* substitui #00140F pela cor de card escuro da paleta */
-    border: 1px solid var(--cor-borda);
+    background: var(--fundo-cartao);  /* substitui #00140F pela cor de card escuro da paleta */
+    border: 1px solid var(--borda-sutil);
     border-radius: 1.2rem;
     padding: 2.4rem;
     width: 32rem;
-    box-shadow: 0 0 16px rgba(5, 242, 131, 0.1);
 }
 
 .card h2 {
     font-size: 2.4rem;
     margin-bottom: 1.2rem;
-    color: var(--cor-verde);
+    color: var(--texto-principal);
 }
 
 .card p {
     font-size: 1.8rem;
-    color: var(--cor-texto-suave);
+    color: var(--texto-principal);
     line-height: 1.5;
 }

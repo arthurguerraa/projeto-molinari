@@ -6,36 +6,27 @@
 }
 
 :root {
-    /* ===== CORES PRINCIPAIS ===== */
-    --cor-bg: #121212;              /* fundo do site */
-    --cor-card: #05231A;            /* cards verdes escuros */
-    --cor-verde: #05F283;           /* verde neon */
-    --cor-verde-hover: #03c86d;     /* hover do verde */
-    --cor-branco: #ffffff;
-    --cor-texto: #E8FFF4;
+  /* --- 1. IDENTIDADE (O Verde Principal) --- */
+  --cor-primaria:        #10B981; /* Verde Esmeralda Moderno */
+  --cor-primaria-hover:  #059669; /* Verde mais escuro (ao passar o mouse) */
+  --cor-primaria-suave:  rgba(16, 185, 129, 0.15); /* Fundo esverdeado transparente */
 
-    /* ===== CORES DE TEXTO ===== */
-    --cor-texto-suave: #CFFFE7;
-    --cor-texto-cinza: #ccc;
+  /* --- 2. FUNDOS (Modo Escuro Moderno) --- */
+  --fundo-pagina:        #121212; /* Cinza quase preto (melhor que #000) */
+  --fundo-cartao:        #1E1E1E; /* Fundo do container */
+  --fundo-campo:         #27272a; /* Fundo dos inputs (onde digita) */
 
-    /* ===== NAVBAR & FOOTER ===== */
-    --cor-navbar: #0D0E0F;
-    --cor-footer: #0D0E0F;
+  /* --- 3. TEXTOS --- */
+  --texto-principal:     #F1F5F9; /* Branco gelo (lê melhor que branco puro) */
+  --texto-secundario:    #94A3B8; /* Cinza azulado (para labels "Nome", "Email") */
+  --texto-invertido:     #0f172a; /* Cor escura (para usar DENTRO do botão verde) */
 
-    /* ===== INPUTS ===== */
-    --cor-input-bg: #0D0E0F;
-    --cor-input-borda: #0D0E0F;
+  /* --- 4. BORDAS --- */
+  --borda-sutil:         #3F3F46; /* Linha fina cinza para separar áreas */
 
-    /* ===== ALERTAS ===== */
-    --cor-danger: #8b0000;
-    --cor-danger-borda: #ff4d4d;
-
-    /* ===== BORDAS ===== */
-    --cor-borda: #05F283;
-
-    /* ===== FUNDO FORMULÁRIO ===== */
-    --cor-card-claro: #f1f5f9;
-
+  /* --- 5. AÇÕES DE PERIGO (Botão Excluir) --- */
+  --cor-erro:            #EF4444; /* Vermelho alerta */
+  --cor-erro-hover:      #DC2626; /* Vermelho mais forte */
 }
 
 html,
@@ -46,6 +37,6 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background: #121212;
+    background: white;
     font-family: Arial, sans-serif;
 }
