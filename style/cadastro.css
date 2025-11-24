@@ -19,14 +19,14 @@ main {
 /* TEXTOS DO FORM */
 .form-container h1 {
     font-size: 2.8rem;
-    color: var(--cor-branco); /* antes: #000 */
+    color: var(--cor-input-bg); 
     margin-bottom: 0.8rem;
     font-weight: 700;
 }
 
 .form-container p {
     font-size: 1.6rem;
-    color: var(--cor-texto-suave); /* antes: #475569 */
+    color: var(--cor-input-bg); 
     margin-bottom: 2.4rem;
 }
 
@@ -38,8 +38,7 @@ main {
     border-radius: 0.8rem;
     border: 1px solid var(--cor-input-borda); /* antes: #cbd5e1 */
     font-size: 1.6rem;
-    background: var(--cor-input-bg);
-    color: var(--cor-branco);
+    color: var(--cor-input-bg);
 }
 
 /* BOTÃO */
@@ -64,7 +63,7 @@ main {
 .toggle {
     margin-top: 1.6rem;
     font-size: 1.4rem;
-    color: var(--cor-texto-suave); /* antes: #475569 */
+    color: var(--cor-input-bg); /* antes: #475569 */
 }
 
 .toggle a {

@@ -1,32 +1,33 @@
 main {
     color: var(--cor-branco);
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* === CONTAINER LOGIN === */
 .container {
-    background: var(--cor-card-claro); /* era #f1f5f9 */
+    background: var(--cor-card-claro); 
     width: 360px;
     padding: 32px;
-    border: 2px solid var(--cor-branco); /* era white */
+    border: 2px solid var(--cor-branco); 
     border-radius: 16px;
     margin: 60px auto;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* NÃO há var para sombra */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
     text-align: center;
 }
 
 .container h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.6rem;
-    margin-bottom: 8px;
-    color: var(--cor-card); /* era #000D08 — cor mais próxima escura do tema */
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--cor-input-bg);
 }
 
 .container p {
     font-size: 1.6rem;
-    margin-top: 0;
-    margin-bottom: 24px;
-    color: var(--cor-card); /* mesma lógica */
+    margin-bottom: 2.4rem;
+    color: var(--cor-input-bg);
 }
 
 input {
@@ -34,23 +35,23 @@ input {
     padding: 12px;
     margin-bottom: 16px;
     border-radius: 8px;
-    background: var(--cor-branco); /* era #fff */
-    color: var(--cor-card); /* texto escuro */
+    background: var(--cor-branco); 
+    color: var(--cor-card); 
     font-size: 1.4rem;
-    border: 1px solid var(--cor-input-borda); /* ADICIONEI para manter padrão */
+    border: 1px solid var(--cor-input-borda); 
 }
 
 input::placeholder {
-    color: var(--cor-texto-cinza); /* era #94a3b8 — esta é a mais próxima */
+    color: var(--cor-texto-cinza); 
 }
 
 button {
     width: 100%;
     padding: 12px;
-    background: var(--cor-verde); /* era #05f283 */
+    background: var(--cor-verde); 
     border: none;
     border-radius: 8px;
-    color: var(--cor-navbar); /* texto preto → var escura mais próxima */
+    color: var(--cor-navbar); 
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
@@ -58,7 +59,7 @@ button {
 }
 
 button:hover {
-    background: var(--cor-verde-hover); /* era #03c86d */
+    background: var(--cor-verde-hover); 
 }
 
 .resetsenha {
@@ -69,12 +70,12 @@ button:hover {
 .toggle {
     margin-top: 16px;
     font-size: 1.4rem;
-    color: var(--cor-card); /* era #000D08 */
+    color: var(--cor-card); 
 }
 
 .toggle a,
 .container a {
-    color: var(--cor-verde); /* era #2563eb — azul → substituição mais próxima */
+    color: #2563eb;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
