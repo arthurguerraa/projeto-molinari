@@ -83,6 +83,10 @@
     color: var(--cor-verde);
 }
 
+.confrontos td{
+    text-align: center;
+}
+
 .confrontos tr:hover {
     background: var(--cor-primaria-hover);
 }
