@@ -1,10 +1,10 @@
 /* ===== CONTAINER PRINCIPAL ===== */
 
-main{
+main {
   width: 90%;
   max-width: 1200px;
   margin: 6rem auto;
-  color: var(--fundo-pagina); 
+  color: var(--fundo-pagina);
   flex: 1;
 }
 
@@ -15,22 +15,22 @@ main{
   gap: 2rem;
   align-items: center;
 
-  background: var(--fundo-cartao); 
+  background: var(--fundo-cartao);
 
   padding: 2rem;
   border-radius: 1rem;
 
-  border: 1px solid var(--borda-sutil); 
+  border: 1px solid var(--borda-sutil);
 }
 
 .user-card h1 {
   font-size: 1.8rem;
-  color: var(--texto-principal); 
+  color: var(--texto-principal);
 }
 
 .user-card p {
   font-size: 1.4rem;
-  color: var(--texto-principal); 
+  color: var(--texto-principal);
 }
 
 /* Avatar */
@@ -47,9 +47,9 @@ main{
   margin-top: 1rem;
   padding: 0.8rem 1.6rem;
   font-size: 1.6rem;
-  background: var(--cor-primaria); 
+  background: var(--cor-primaria);
   border: none;
-  color: var(--texto-invertido); 
+  color: var(--texto-invertido);
   border-radius: 0.8rem;
   cursor: pointer;
   font-weight: bold;
@@ -57,12 +57,12 @@ main{
 }
 
 .btn-edit:hover {
-  background: var(--cor-primaria-hover); 
+  background: var(--cor-primaria-hover);
 }
 
 /* ===== SEÇÕES ===== */
 
-.profile-section{
+.profile-section {
   margin-top: 2rem;
   background: var(--fundo-cartao);
 }
@@ -70,34 +70,37 @@ main{
 .profile-section h2 {
   font-size: 2.4rem;
   margin-bottom: 1.6rem;
-  color: var(--texto-principal); /* era #05F283 */
+  color: var(--texto-principal);
 }
 
-/* Grid das ligas/times */
+/* ===== FLEX NAS CARDS ===== */
+
 .grid-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;       /* faz quebrar linha igual o grid fazia */
   gap: 1.6rem;
 }
 
 /* ===== CARDS ===== */
 
 .card {
-  background: var(--fundo-cartao); 
+  background: var(--fundo-cartao);
 
   padding: 1.6rem;
   border-radius: 0.8rem;
   text-align: center;
   font-size: 1.8rem;
 
-  border: 1px solid var(--cor-borda); 
-  color: var(--texto-principal); 
+  border: 1px solid var(--cor-borda);
+  color: var(--texto-principal);
 
   transition: 0.2s;
+
+  /* substitui minmax(180px, 1fr) do grid */
+  flex: 1 1 180px;
 }
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 12px var(--cor-primaria-hover); 
-  /* não existe variável neon → deixei a sombra como valor literal */
+  box-shadow: 0 0 12px var(--cor-primaria-hover);
 }
