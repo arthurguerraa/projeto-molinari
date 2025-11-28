@@ -14,7 +14,7 @@ main {
     margin-top: 2.0rem;
     line-height: 1.1;
     font-weight: 800;
-    color: var(--texto-principal);
+    color: var(--cor-primaria);
 }
 
 .main-texto>h2 {
@@ -38,12 +38,12 @@ main {
     border: 1px solid var(--cor-primaria);
     background: var(--cor-primaria);
     color: var(--texto-invertido);
-    /* #000D08 → cor escura mais próxima */
     border-radius: 0.8rem;
     cursor: pointer;
     font-size: 1.8rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin: 2rem 2rem;
+    height: 5rem;
+    width: 30rem;
 }
 
 .cards {
@@ -51,7 +51,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .cards-info {
