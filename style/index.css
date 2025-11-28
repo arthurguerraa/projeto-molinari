@@ -1,5 +1,6 @@
 main {
     flex: 1;
+    padding: 4rem 4rem;
 }
 
 .main-texto {
@@ -18,8 +19,8 @@ main {
 }
 
 .main-texto>h2 {
-    font-size: 3.0rem;
-    margin-top: 2.0rem;
+    font-size: 3rem;
+    margin-top: 2rem;
     line-height: 1.3;
     font-weight: 600;
     color: var(--texto-principal);

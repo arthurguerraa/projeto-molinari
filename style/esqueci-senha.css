@@ -1,0 +1,80 @@
+/* === MAIN (conteúdo centralizado e flexível) === */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.6rem;
+}
+
+/* Card do formulário */
+.form-card {
+    width: 36rem;
+    background: var(--fundo-cartao); 
+    padding: 3.2rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* Tipografia do formulário */
+.form-card h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    color: var(--texto-principal); 
+}
+
+.form-card p {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+    color: var(--texto-principal); 
+}
+
+/* Inputs */
+.form-card input {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 1.6rem;
+    border-radius: 0.8rem;
+    background: var(--fundo-campo);
+    color: var(--texto-secundario);
+    font-size: 1.4rem;
+}
+
+/* Placeholder mais claro */
+.form-card input::placeholder {
+    color: var(--texto-secundario);
+}
+
+/* Botão principal */
+.btn-submit {
+    width: 100%;
+    padding: 1.2rem;
+    background: var(--cor-primaria);
+    border: none;
+    border-radius: 0.8rem;
+    color: var(--cor-texto-invertido); 
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-submit:hover {
+    background: var(--cor-primaria-hover);
+}
+
+/* Link auxiliar */
+.toggle {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    color: var(--texto-principal);
+}
+
+.toggle a {
+    color: #2563eb;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+}
