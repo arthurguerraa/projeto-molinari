@@ -125,3 +125,28 @@
         flex-direction: column;
     }
 }
+
+
+.league-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--fundo-pagina);
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--borda-sutil);
+}
+
+.league-nav a {
+    font-size: 1.6rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    border-radius: .6rem;
+    transition: .2s;
+}
+
+.league-nav a:hover {
+    background: var(--fundo-cartao);
+    color: var(--cor-primaria-hover);
+}
+
