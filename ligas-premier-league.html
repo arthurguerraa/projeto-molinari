@@ -309,35 +309,14 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>Flamengo</td>
-                            <td>x</td>
-                            <td>Palmeiras</td>
-                            <td>23/11</td>
-                        </tr>
-                        <tr>
-                            <td>Botafogo</td>
-                            <td>x</td>
-                            <td>Bahia</td>
-                            <td>23/11</td>
-                        </tr>
-                        <tr>
-                            <td>Atlético-MG</td>
-                            <td>x</td>
-                            <td>Grêmio</td>
-                            <td>24/11</td>
-                        </tr>
-                        <tr>
-                            <td>São Paulo</td>
-                            <td>x</td>
-                            <td>Cruzeiro</td>
-                            <td>24/11</td>
-                        </tr>
-                        <!-- ... restante ... -->
+                    <tbody id="matches-body">
+                        <!-- JS irá preencher aqui -->
                     </tbody>
                 </table>
             </section>
+
+            
+
 
         </div> <!-- fim da top-row -->
 
@@ -366,7 +345,8 @@
 
     <footer class="footer" id="footer"></footer>
     <script src="layout.js"></script>
-    <script type="module" src="scripts/render-goals-table.js"></script>
+    <script src="js/confrontos.js"></script>
+    <script type="module" src="data/confrontos.js"></script>
 
 </body>
 
