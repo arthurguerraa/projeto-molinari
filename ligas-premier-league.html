@@ -13,7 +13,7 @@
 </head>
 
 <body>
-   <header id="header-logado"></header>
+    <header id="header-logado"></header>
     <nav class="league-nav">
         <a href="ligas-premier-league.html">Premier League</a>
         <a href="ligas-brasileirao.html">Brasileirão</a>
@@ -342,59 +342,32 @@
         </div> <!-- fim da top-row -->
 
         <!-- MÉDIA DE GOLS -->
-        <section class="box media-gols">
-            <h2>Média de Gols — Casa & Fora</h2>
+<section class="box media-gols">
+    <h2>Média de Gols — Casa & Fora</h2>
 
-            <table class="goals-table">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>MG Marc (Casa)</th>
-                        <th>MG Sofr (Casa)</th>
-                        <th>MG Marc (Fora)</th>
-                        <th>MG Sofr (Fora)</th>
-                    </tr>
-                </thead>
+    <table class="goals-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>MG Marc (Casa)</th>
+                <th>MG Sofr (Casa)</th>
+                <th>MG Marc (Fora)</th>
+                <th>MG Sofr (Fora)</th>
+            </tr>
+        </thead>
 
-                <tbody>
-                    <tr>
-                        <td>Flamengo</td>
-                        <td>1.54</td>
-                        <td>1.00</td>
-                        <td>1.69</td>
-                        <td>1.46</td>
-                    </tr>
-                    <tr>
-                        <td>Bahia</td>
-                        <td>1.54</td>
-                        <td>0.54</td>
-                        <td>1.29</td>
-                        <td>1.71</td>
-                    </tr>
-                    <tr>
-                        <td>Botafogo</td>
-                        <td>1.71</td>
-                        <td>0.71</td>
-                        <td>1.57</td>
-                        <td>1.07</td>
-                    </tr>
-                    <tr>
-                        <td>Palmeiras</td>
-                        <td>2.00</td>
-                        <td>0.67</td>
-                        <td>1.23</td>
-                        <td>0.77</td>
-                    </tr>
-                    <!-- ... restante ... -->
-                </tbody>
-            </table>
+        <!-- O JS vai preencher esse tbody automaticamente -->
+        <tbody></tbody>
+    </table>
+</section>
 
-        </section>
 
     </main>
 
     <footer class="footer" id="footer"></footer>
     <script src="layout.js"></script>
+    <script type="module" src="scripts/render-goals-table.js"></script>
+
 </body>
 
 </html>

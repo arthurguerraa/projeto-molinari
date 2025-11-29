@@ -1,0 +1,22 @@
+export const premierLeagueGoals = [
+  { team: "Arsenal", homeFor: 1.90, homeAgainst: 0.80, awayFor: 1.60, awayAgainst: 1.10 },
+  { team: "Manchester City", homeFor: 2.10, homeAgainst: 0.70, awayFor: 1.80, awayAgainst: 1.00 },
+  { team: "Liverpool", homeFor: 2.00, homeAgainst: 0.90, awayFor: 1.70, awayAgainst: 1.20 },
+  { team: "Aston Villa", homeFor: 1.80, homeAgainst: 1.00, awayFor: 1.40, awayAgainst: 1.30 },
+  { team: "Tottenham", homeFor: 1.90, homeAgainst: 1.20, awayFor: 1.50, awayAgainst: 1.40 },
+  { team: "Newcastle", homeFor: 1.70, homeAgainst: 1.10, awayFor: 1.30, awayAgainst: 1.20 },
+  { team: "Manchester United", homeFor: 1.60, homeAgainst: 1.30, awayFor: 1.40, awayAgainst: 1.50 },
+  { team: "Brighton", homeFor: 1.70, homeAgainst: 1.40, awayFor: 1.50, awayAgainst: 1.60 },
+  { team: "West Ham", homeFor: 1.50, homeAgainst: 1.20, awayFor: 1.30, awayAgainst: 1.70 },
+  { team: "Chelsea", homeFor: 1.60, homeAgainst: 1.10, awayFor: 1.40, awayAgainst: 1.30 },
+  { team: "Crystal Palace", homeFor: 1.20, homeAgainst: 1.10, awayFor: 1.00, awayAgainst: 1.40 },
+  { team: "Brentford", homeFor: 1.30, homeAgainst: 1.20, awayFor: 1.10, awayAgainst: 1.50 },
+  { team: "Fulham", homeFor: 1.40, homeAgainst: 1.30, awayFor: 1.10, awayAgainst: 1.60 },
+  { team: "Everton", homeFor: 1.10, homeAgainst: 1.10, awayFor: 0.90, awayAgainst: 1.40 },
+  { team: "Nottingham Forest", homeFor: 1.20, homeAgainst: 1.40, awayFor: 1.00, awayAgainst: 1.80 },
+  { team: "Wolves", homeFor: 1.20, homeAgainst: 1.30, awayFor: 1.10, awayAgainst: 1.60 },
+  { team: "Bournemouth", homeFor: 1.30, homeAgainst: 1.50, awayFor: 1.10, awayAgainst: 1.90 },
+  { team: "Southampton", homeFor: 1.10, homeAgainst: 1.60, awayFor: 0.90, awayAgainst: 2.00 },
+  { team: "Leicester", homeFor: 1.40, homeAgainst: 1.50, awayFor: 1.20, awayAgainst: 1.70 },
+  { team: "Ipswich Town", homeFor: 1.00, homeAgainst: 1.70, awayFor: 0.90, awayAgainst: 2.10 }
+];
