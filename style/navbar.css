@@ -51,3 +51,20 @@
     background: var(--cor-primaria-hover); 
     color: var(--texto-invertido); 
 }
+
+/* Área do usuário */
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* Avatar redondo */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--cor-verde);
+}
+
