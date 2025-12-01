@@ -12,28 +12,31 @@
 </head>
 
 <body>
-  <header id="header"></header>
+  <header id="cabecalho"></header>
   <main>
-    <div class="container">
-      <h1>Login</h1>
-      <p>Entre para acessar as análises da plataforma</p>
+  <div class="login__container">
+    <h1 class="login__titulo">Login</h1>
+    <p class="login__descricao">Entre para acessar as análises da plataforma</p>
 
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Senha" />
+    <input type="email" placeholder="Email" class="login__campo" />
+    <input type="password" placeholder="Senha" class="login__campo" />
 
-      <a href="perfil.html"><button>Entrar</button></a>
+    <a href="perfil.html">
+      <button class="login__botao">Entrar</button>
+    </a>
 
-      <div class="resetsenha">
-        <a href="esqueci-senha.html">Esqueci a senha</a>
-      </div>
-
-      <div class="toggle">
-        Não tem conta? <a href="cadastro.html">Cadastre-se</a>
-      </div>
+    <div class="login__recuperar-senha">
+      <a href="esqueci-senha.html">Esqueci a senha</a>
     </div>
-  </main>
 
-  <footer class="footer" id="footer"></footer>
+    <div class="login__alternar-acesso">
+      Não tem conta? <a href="cadastro.html">Cadastre-se</a>
+    </div>
+  </div>
+</main>
+
+
+  <footer class="rodape" id="rodape"></footer>
   <script src="layout.js"></script>
 </body>
 

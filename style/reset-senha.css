@@ -7,8 +7,8 @@ main {
     padding: 4rem 1.6rem;
 }
 
-/* Card do formulário */
-.form-card {
+/* === BLOCO RESET-SENHA (BEM) === */
+.reset-senha__container {
     width: 36rem;
     background: var(--fundo-cartao); 
     padding: 3.2rem;
@@ -17,22 +17,22 @@ main {
     text-align: center;
 }
 
-/* Tipografia do formulário */
-.form-card h1 {
+/* Tipografia */
+.reset-senha__titulo {
     font-size: 2.8rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
     color: var(--texto-principal); 
 }
 
-.form-card p {
+.reset-senha__descricao {
     font-size: 1.6rem;
     margin-bottom: 2.4rem;
     color: var(--texto-principal); 
 }
 
-/* Inputs */
-.form-card input {
+/* Campos de input */
+.reset-senha__campo {
     width: 100%;
     padding: 1.2rem;
     margin-bottom: 1.6rem;
@@ -42,13 +42,12 @@ main {
     font-size: 1.4rem;
 }
 
-/* Placeholder mais claro */
-.form-card input::placeholder {
+.reset-senha__campo::placeholder {
     color: var(--texto-secundario);
 }
 
 /* Botão principal */
-.btn-submit {
+.reset-senha__botao {
     width: 100%;
     padding: 1.2rem;
     background: var(--cor-primaria);
@@ -61,18 +60,18 @@ main {
     transition: 0.2s;
 }
 
-.btn-submit:hover {
+.reset-senha__botao:hover {
     background: var(--cor-primaria-hover);
 }
 
 /* Link auxiliar */
-.toggle {
+.reset-senha__alternar-acesso {
     margin-top: 1.6rem;
     font-size: 1.4rem;
     color: var(--texto-principal);
 }
 
-.toggle a {
+.reset-senha__alternar-acesso a {
     color: #2563eb;
     font-size: 1.4rem;
     font-weight: 600;

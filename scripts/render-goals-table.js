@@ -1,23 +1,23 @@
-import { premierLeagueGoals } from "../data/fake-goals-premier.js";
+import { mediaGolsPremier } from "../data/fake-goals-premier.js";
 
-function renderGoalsTable() {
-  const tableBody = document.querySelector(".goals-table tbody");
+function carregarMediaGols() {
+    const corpo = document.querySelector(".media-gols__corpo");
+    corpo.innerHTML = "";
 
-  tableBody.innerHTML = ""; // limpa conteúdo original
+    mediaGolsPremier.forEach(time => {
+        const tr = document.createElement("tr");
+        tr.className = "media-gols__linha";
 
-  premierLeagueGoals.forEach(team => {
-    const row = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${time.time}</td>
+            <td>${time.mediaCasaPro.toFixed(2)}</td>
+            <td>${time.mediaCasaContra.toFixed(2)}</td>
+            <td>${time.mediaForaPro.toFixed(2)}</td>
+            <td>${time.mediaForaContra.toFixed(2)}</td>
+        `;
 
-    row.innerHTML = `
-      <td>${team.team}</td>
-      <td>${team.homeFor.toFixed(2)}</td>
-      <td>${team.homeAgainst.toFixed(2)}</td>
-      <td>${team.awayFor.toFixed(2)}</td>
-      <td>${team.awayAgainst.toFixed(2)}</td>
-    `;
-
-    tableBody.appendChild(row);
-  });
+        corpo.appendChild(tr);
+    });
 }
 
-document.addEventListener("DOMContentLoaded", renderGoalsTable);
+document.addEventListener("DOMContentLoaded", carregarMediaGols);

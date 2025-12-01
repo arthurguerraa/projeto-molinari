@@ -11,22 +11,23 @@ const confrontos = [
     { casa: "Nottingham Forest", fora: "Ipswich Town", data: "03/12" },
 ];
 
-function carregarConfrontos() {
-    const tbody = document.getElementById("matches-body");
+function carregarConfrontosRodada() {
+    const corpo = document.getElementById("confrontos-rodada__corpo");
 
     confrontos.forEach(jogo => {
-        const row = document.createElement("tr");
+        const tr = document.createElement("tr");
+        tr.className = "confrontos-rodada__linha";
 
-        row.innerHTML = `
+        tr.innerHTML = `
             <td>${jogo.casa}</td>
             <td>x</td>
             <td>${jogo.fora}</td>
             <td>${jogo.data}</td>
         `;
 
-        tbody.appendChild(row);
+        corpo.appendChild(tr);
     });
 }
 
-carregarConfrontos();
+carregarConfrontosRodada();
 

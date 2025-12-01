@@ -1,17 +1,16 @@
 /* ===== CONTAINER PRINCIPAL ===== */
-.edit-container {
+.editar-perfil {
   width: 90%;
   max-width: 800px;
   margin: 4rem auto;
   color: var(--texto-principal);
-  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* ===== CARD ===== */
-.edit-card {
+.editar-perfil__card {
   width: 70%;
   background: var(--fundo-cartao);
   padding: 2.4rem;
@@ -19,31 +18,31 @@
   border: 1px solid var(--borda-sutil);
 }
 
-.edit-card h1 {
+.editar-perfil__titulo {
   font-size: 2.4rem;
   color: var(--texto-principal);
   margin-bottom: 2rem;
 }
 
 /* ===== FOTO ===== */
-.edit-photo {
+.editar-perfil__foto {
   display: flex;
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
-.edit-photo .avatar {
+.editar-perfil__avatar {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 2px solid var(--borda-sutil);
 }
 
-.btn-upload {
+.editar-perfil__btn-upload {
   display: inline-block;
   background: var(--cor-primaria);
-  color: var(--texto-invertido); 
+  color: var(--texto-invertido);
   padding: 0.8rem 1.6rem;
   border-radius: 0.8rem;
   font-size: 1.4rem;
@@ -51,23 +50,23 @@
   font-weight: bold;
 }
 
-.btn-upload input {
+.editar-perfil__btn-upload input {
   display: none;
 }
 
 /* ===== FORM ===== */
-.edit-form {
+.editar-perfil__formulario {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.edit-form label {
+.editar-perfil__label {
   font-size: 1.6rem;
   color: var(--texto-secundario);
 }
 
-.edit-form input {
+.editar-perfil__input {
   padding: 1rem;
   font-size: 1.6rem;
   background: var(--fundo-campo);
@@ -77,42 +76,32 @@
 }
 
 /* ===== BOTÕES ===== */
-.buttons {
+.editar-perfil__botoes {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.btn-save {
-  background: var(--cor-primaria);
+.editar-perfil__botao {
   padding: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  cursor: pointer;
   border: none;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  cursor: pointer;
-  color: var(--texto-invertido); /* substituindo #000 */
+  transition: 0.2s;
 }
 
-.btn-cancel {
-  background: var(--cor-erro);
-  border: 1px solid var(--borda-sutil);
-  padding: 1.2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  border-radius: 0.8rem;
+/* Modificadores */
+.editar-perfil__botao--salvar {
+  background: var(--cor-primaria);
   color: var(--texto-invertido);
-  cursor: pointer;
 }
 
-.btn-delete {
+.editar-perfil__botao--cancelar,
+.editar-perfil__botao--excluir {
   background: var(--cor-erro);
-  border: 1px solid var(--borda-sutil);
-  padding: 1.2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  border-radius: 0.8rem;
   color: var(--texto-invertido);
-  cursor: pointer;
+  border: 1px solid var(--borda-sutil);
 }

@@ -27,25 +27,29 @@ tabelaPremier.forEach(t => {
     t.SG = t.GP - t.GC;
 });
 
-function carregarTabela() {
-    const tbody = document.getElementById("tabela-body");
+function carregarTabelaCampeonato() {
+    const corpo = document.getElementById("tabela-campeonato__corpo");
 
-    tabelaPremier.forEach(row => {
+    tabelaPremier.forEach(item => {
         const tr = document.createElement("tr");
+        tr.className = "tabela-campeonato__linha";
+
         tr.innerHTML = `
-            <td>${row.pos}</td>
-            <td>${row.time}</td>
-            <td>${row.P}</td>
-            <td>${row.J}</td>
-            <td>${row.V}</td>
-            <td>${row.E}</td>
-            <td>${row.D}</td>
-            <td>${row.GP}</td>
-            <td>${row.GC}</td>
-            <td>${row.SG}</td>
+            <td>${item.pos}</td>
+            <td>${item.time}</td>
+            <td>${item.P}</td>
+            <td>${item.J}</td>
+            <td>${item.V}</td>
+            <td>${item.E}</td>
+            <td>${item.D}</td>
+            <td>${item.GP}</td>
+            <td>${item.GC}</td>
+            <td>${item.SG}</td>
         `;
-        tbody.appendChild(tr);
+
+        corpo.appendChild(tr);
     });
 }
 
-carregarTabela();
+carregarTabelaCampeonato();
+

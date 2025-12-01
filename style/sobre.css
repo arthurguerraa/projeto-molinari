@@ -1,26 +1,26 @@
 /* MAIN */
-main {
+.sobre {
     flex: 1;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.sobre-container {
+.sobre__container {
     width: 90%;
     max-width: 1100px;
     padding: 4rem 0;
     text-align: center;
 }
 
-.sobre-container h1 {
+.sobre__titulo {
     font-size: 4.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--cor-primaria);
 }
 
-.descricao {
+.sobre__descricao {
     font-size: 3rem;
     color: var(--texto-principal);
     max-width: 800px;
@@ -30,28 +30,28 @@ main {
 }
 
 /* Cards */
-.cards {
+.sobre__cards {
     display: flex;
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.card {
-    background: var(--fundo-cartao);  /* substitui #00140F pela cor de card escuro da paleta */
+.sobre__card {
+    background: var(--fundo-cartao);
     border: 1px solid var(--borda-sutil);
     border-radius: 1.2rem;
     padding: 2.4rem;
     width: 32rem;
 }
 
-.card h2 {
+.sobre__card-titulo {
     font-size: 2.4rem;
     margin-bottom: 1.2rem;
     color: var(--texto-principal);
 }
 
-.card p {
+.sobre__card-texto {
     font-size: 1.8rem;
     color: var(--texto-principal);
     line-height: 1.5;

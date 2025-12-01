@@ -12,44 +12,49 @@
 </head>
 
 <body>
-  <header id="header-logado"></header>
-  <main>
+  <header id="cabecalho-logado"></header>
+  <main class="perfil">
 
     <!-- Card do usuário -->
-    <section class="user-card">
-      <img src="https://via.placeholder.com/100" class="avatar">
-      <div>
-        <h1>Arthur Guerra</h1>
-        <p>Email: usuario@email.com</p>
-        <a href="editar-perfil.html"><button class="btn-edit">Editar Perfil</button></a>
-      </div>
+    <section class="perfil__usuario">
+        <img src="https://via.placeholder.com/100" class="perfil__usuario-avatar">
+        <div class="perfil__usuario-info">
+            <h1 class="perfil__usuario-nome">Arthur Guerra</h1>
+            <p class="perfil__usuario-email">Email: usuario@email.com</p>
+            <a href="editar-perfil.html">
+                <button class="perfil__usuario-botao-editar">Editar Perfil</button>
+            </a>
+        </div>
     </section>
 
     <!-- Ligas favoritas -->
-    <section class="profile-section">
-      <h2>Ligas Favoritas</h2>
-      <div class="grid-cards">
-        <div class="card">Premier League</div>
-        <div class="card">La Liga</div>
-        <div class="card">Serie A</div>
-        <div class="card">Bundesliga</div>
-      </div>
+    <section class="perfil__secao">
+        <h2 class="perfil__secao-titulo">Ligas Favoritas</h2>
+
+        <div class="perfil__lista-cards">
+            <div class="perfil__card">Premier League</div>
+            <div class="perfil__card">La Liga</div>
+            <div class="perfil__card">Serie A</div>
+            <div class="perfil__card">Bundesliga</div>
+        </div>
     </section>
 
     <!-- Times favoritos -->
-    <section class="profile-section">
-      <h2>Times Favoritos</h2>
-      <div class="grid-cards">
-        <div class="card">Manchester City</div>
-        <div class="card">Arsenal</div>
-        <div class="card">Barcelona</div>
-      </div>
+    <section class="perfil__secao">
+        <h2 class="perfil__secao-titulo">Times Favoritos</h2>
+
+        <div class="perfil__lista-cards">
+            <div class="perfil__card">Manchester City</div>
+            <div class="perfil__card">Arsenal</div>
+            <div class="perfil__card">Barcelona</div>
+        </div>
     </section>
 
-  </main>
+</main>
+
 
   <!-- FOOTER -->
-  <footer class="footer" id="footer"></footer>
+ <footer class="rodape" id="rodape"></footer>
   <script src="layout.js"></script>
 </body>
 

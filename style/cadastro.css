@@ -1,5 +1,5 @@
 /* MAIN */
-main {
+.cadastro {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -7,8 +7,8 @@ main {
     padding: 4rem 0;
 }
 
-.form-container {
-    background: var(--fundo-cartao); 
+.cadastro__container {
+    background: var(--fundo-cartao);
     width: 36rem;
     padding: 3.2rem;
     border-radius: 1.6rem;
@@ -16,37 +16,37 @@ main {
     text-align: center;
 }
 
-/* TEXTOS DO FORM */
-.form-container h1 {
+/* TEXTOS */
+.cadastro__titulo {
     font-size: 2.8rem;
-    color: var(--texto-principal); 
+    color: var(--texto-principal);
     margin-bottom: 0.8rem;
     font-weight: 700;
 }
 
-.form-container p {
+.cadastro__subtitulo {
     font-size: 1.6rem;
-    color: var(--texto-principal); 
+    color: var(--texto-principal);
     margin-bottom: 2.4rem;
 }
 
-/* INPUTS */
-.form-container input {
+/* CAMPOS */
+.cadastro__campo {
     width: 100%;
     padding: 1.2rem;
     margin-bottom: 1.6rem;
     border-radius: 0.8rem;
-    border: 1px solid var(--borda-sutil);  
+    border: 1px solid var(--borda-sutil);
     font-size: 1.6rem;
     background: var(--fundo-campo);
     color: var(--texto-secundario);
 }
 
 /* BOTÃO */
-.btn-submit {
+.cadastro__botao {
     width: 100%;
     padding: 1.2rem;
-    background: var(--cor-primaria); 
+    background: var(--cor-primaria);
     border: none;
     border-radius: 0.8rem;
     color: #000D08;
@@ -56,19 +56,19 @@ main {
     transition: 0.2s;
 }
 
-.btn-submit:hover {
-    background: var(--cor-primaria-hover); 
+.cadastro__botao:hover {
+    background: var(--cor-primaria-hover);
 }
 
-/* TOGGLE */
-.toggle {
+/* ALTERNAR LOGIN */
+.cadastro__alternar {
     margin-top: 1.6rem;
     font-size: 1.4rem;
-    color: var(--texto-principal); 
+    color: var(--texto-principal);
 }
 
-.toggle a {
-    color: #2563eb; 
+.cadastro__alternar-link {
+    color: #2563eb;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: bold;

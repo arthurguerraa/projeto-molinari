@@ -11,28 +11,29 @@
 </head>
 
 <body>
-<header id="header"></header>
+<header id="cabecalho"></header>
     <!-- MAIN -->
-    <main>
-        <div class="form-container">
-            <h1>Cadastro</h1>
-            <p>Crie sua conta para acessar a plataforma</p>
+    <main class="cadastro">
+    <div class="cadastro__container">
+        <h1 class="cadastro__titulo">Cadastro</h1>
+        <p class="cadastro__subtitulo">Crie sua conta para acessar a plataforma</p>
 
-            <input type="text" placeholder="Nome completo">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Senha">
-            <input type="password" placeholder="Confirmar senha">
+        <input class="cadastro__campo" type="text" placeholder="Nome completo">
+        <input class="cadastro__campo" type="email" placeholder="Email">
+        <input class="cadastro__campo" type="password" placeholder="Senha">
+        <input class="cadastro__campo" type="password" placeholder="Confirmar senha">
 
-            <button class="btn-submit">Cadastrar</button>
+        <button class="cadastro__botao">Cadastrar</button>
 
-            <div class="toggle">
-                Já tem conta? <a href="login.html">Entrar</a>
-            </div>
+        <div class="cadastro__alternar">
+            Já tem conta? <a class="cadastro__alternar-link" href="login.html">Entrar</a>
         </div>
-    </main>
+    </div>
+</main>
+
 
     <!-- FOOTER -->
-    <footer class="footer" id="footer"></footer>
+    <footer class="rodape" id="rodape"></footer>
     <script src="layout.js"></script>
 </body>
 </html>

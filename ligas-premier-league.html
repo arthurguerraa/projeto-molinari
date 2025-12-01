@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header id="header-logado"></header>
+    <header id="cabecalho-logado"></header>
     <nav class="league-nav">
         <a href="ligas-premier-league.html">Premier League</a>
         <a href="ligas-brasileirao.html">Brasileirão</a>
@@ -24,89 +24,86 @@
     </nav>
 
 
-    <main class="league-container">
+    <main class="liga-container">
 
-        <!-- PRIMEIRA LINHA: TABELA + CONFRONTOS -->
-        <div class="top-row">
+    <!-- PRIMEIRA LINHA: TABELA + CONFRONTOS -->
+    <div class="liga-container__linha-superior">
 
-            <!-- TABELA DO CAMPEONATO -->
-            <section class="box tabela-campeonato">
-    <h2>Tabela do Campeonato</h2>
+        <!-- TABELA DO CAMPEONATO -->
+        <section class="caixa caixa--tabela-campeonato tabela-campeonato">
+            <h2 class="tabela-campeonato__titulo">Tabela do Campeonato</h2>
 
-    <table class="league-table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Time</th>
-                <th>P</th>
-                <th>J</th>
-                <th>V</th>
-                <th>E</th>
-                <th>D</th>
-                <th>GP</th>
-                <th>GC</th>
-                <th>SG</th>
-            </tr>
-        </thead>
-
-        <tbody id="tabela-body">
-            <!-- preenchido via JS -->
-        </tbody>
-    </table>
-</section>
-            <!-- CONFRONTOS DA RODADA -->
-            <section class="box confrontos">
-                <h2>Confrontos da Rodada</h2>
-
-                <table class="matches-table">
-                    <thead>
-                        <tr>
-                            <th>Casa</th>
-                            <th></th>
-                            <th>Fora</th>
-                            <th>Data</th>
-                        </tr>
-                    </thead>
-
-                    <tbody id="matches-body">
-                        <!-- JS irá preencher aqui -->
-                    </tbody>
-                </table>
-            </section>
-
-            
-
-
-        </div> <!-- fim da top-row -->
-
-        <!-- MÉDIA DE GOLS -->
-        <section class="box media-gols">
-            <h2>Média de Gols — Casa & Fora</h2>
-
-            <table class="goals-table">
-                <thead>
-                    <tr>
+            <table class="tabela-campeonato__tabela">
+                <thead class="tabela-campeonato__cabecalho">
+                    <tr class="tabela-campeonato__linha">
+                        <th>#</th>
                         <th>Time</th>
-                        <th>MG Marc (Casa)</th>
-                        <th>MG Sofr (Casa)</th>
-                        <th>MG Marc (Fora)</th>
-                        <th>MG Sofr (Fora)</th>
+                        <th>P</th>
+                        <th>J</th>
+                        <th>V</th>
+                        <th>E</th>
+                        <th>D</th>
+                        <th>GP</th>
+                        <th>GC</th>
+                        <th>SG</th>
                     </tr>
                 </thead>
 
-                <!-- O JS vai preencher esse tbody automaticamente -->
-                <tbody></tbody>
+                <tbody id="tabela-campeonato__corpo" class="tabela-campeonato__corpo">
+                    <!-- preenchido via JS -->
+                </tbody>
             </table>
         </section>
 
+        <!-- CONFRONTOS DA RODADA -->
+        <section class="caixa caixa--confrontos-rodada confrontos-rodada">
+            <h2 class="confrontos-rodada__titulo">Confrontos da Rodada</h2>
 
-    </main>
+            <table class="confrontos-rodada__tabela">
+                <thead class="confrontos-rodada__cabecalho">
+                    <tr class="confrontos-rodada__linha">
+                        <th>Casa</th>
+                        <th></th>
+                        <th>Fora</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
 
-    <footer class="footer" id="footer"></footer>
+                <tbody id="confrontos-rodada__corpo" class="confrontos-rodada__corpo">
+                    <!-- JS -->
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <!-- MÉDIA DE GOLS -->
+    <section class="caixa caixa--media-gols media-gols">
+        <h2 class="media-gols__titulo">Média de Gols — Casa & Fora</h2>
+
+        <table class="media-gols__tabela">
+            <thead class="media-gols__cabecalho">
+                <tr class="media-gols__linha">
+                    <th>Time</th>
+                    <th>MG Marc (Casa)</th>
+                    <th>MG Sofr (Casa)</th>
+                    <th>MG Marc (Fora)</th>
+                    <th>MG Sofr (Fora)</th>
+                </tr>
+            </thead>
+
+            <tbody class="media-gols__corpo"></tbody>
+        </table>
+    </section>
+
+</main>
+    <footer class="rodape" id="rodape"></footer>
     <script src="layout.js"></script>
     <script src="data/tabela.js"></script>
     <script src="js/confrontos.js"></script>
     <script type="module" src="data/confrontos.js"></script>
+    <script type="module" src="scripts/render-goals-table.js"></script>
+
 
 </body>
 

@@ -1,41 +1,35 @@
-/* ====== CONTAINER GERAL (AGORA FLEX) ====== */
-.league-container {
+/* ====== CONTAINER GERAL ====== */
+.liga-container {
     width: 100%;
     max-width: 1200px;
     margin: 4rem auto;
     padding: 2rem;
-
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
-/* ====== PRIMEIRA LINHA: TABELA + CONFRONTOS ====== */
-.top-row {
+.liga-container__linha-superior {
     display: flex;
     gap: 3rem;
 }
 
-/* Tabela ocupa mais espaço */
-.tabela-campeonato {
-    flex: 1.2;
-}
-
-/* Confrontos ocupa menos */
-.confrontos {
-    flex: 1;
-}
-
-/* ====== BOX PADRÃO ====== */
-.box {
-    background: var(--fundo-cartao); 
-    border: 1px solid var(--borda-sutil); 
+/* ====== BOX ====== */
+.caixa {
+    background: var(--fundo-cartao);
+    border: 1px solid var(--borda-sutil);
     border-radius: 1.6rem;
     padding: 2.4rem;
 }
 
+.caixa--tabela-campeonato { flex: 1.2; }
+.caixa--confrontos-rodada { flex: 1; }
+.caixa--media-gols { width: 100%; }
+
 /* ====== TÍTULOS ====== */
-.box h2 {
+.tabela-campeonato__titulo,
+.confrontos-rodada__titulo,
+.media-gols__titulo {
     color: var(--texto-principal);
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -43,110 +37,69 @@
 }
 
 /* ====== TABELA DO CAMPEONATO ====== */
-.tabela-campeonato table {
+.tabela-campeonato__tabela {
     width: 100%;
     border-collapse: collapse;
     font-size: 6.6rem;
     color: var(--texto-principal);
 }
 
-.tabela-campeonato th,
-.tabela-campeonato td {
+.tabela-campeonato__tabela th,
+.tabela-campeonato__tabela td {
     padding: 1rem 0.8rem;
     border-bottom: 1px solid var(--borda-sutil);
 }
 
-.tabela-campeonato th {
-    font-weight: 700;
-}
-
-.tabela-campeonato tr:hover {
-    background: var(--cor-primaria-hover); 
-}
-
-/* ====== TABELA DE CONFRONTOS ====== */
-.confrontos table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 6.6rem;
-    color: var(--texto-principal);
-}
-
-.confrontos th,
-.confrontos td {
-    padding: 1rem 0.8rem;
-    border-bottom: 1px solid var(--borda-sutil);
-}
-
-.confrontos th {
-    font-weight: 700;
-    color: var(--cor-verde);
-}
-
-.confrontos td{
-    text-align: center;
-}
-
-.confrontos tr:hover {
+.tabela-campeonato__tabela tr:hover {
     background: var(--cor-primaria-hover);
 }
 
-/* ====== TABELA DE MÉDIA DE GOLS (SEGUNDA LINHA) ====== */
-.media-gols {
-    width: 100%; /* ocupa toda a largura */
-}
-
-.media-gols table {
+/* ====== TABELA DE CONFRONTOS ====== */
+.confrontos-rodada__tabela {
     width: 100%;
     border-collapse: collapse;
     font-size: 6.6rem;
     color: var(--texto-principal);
 }
 
-.media-gols th,
-.media-gols td {
+.confrontos-rodada__tabela th,
+.confrontos-rodada__tabela td {
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid var(--borda-sutil);
+    text-align: center;
+}
+
+.confrontos-rodada__tabela tr:hover {
+    background: var(--cor-primaria-hover);
+}
+
+/* ====== MÉDIA DE GOLS ====== */
+.media-gols__tabela {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 6.6rem;
+    color: var(--texto-principal);
+}
+
+.media-gols__tabela th,
+.media-gols__tabela td {
     padding: 0.8rem;
     border-bottom: 1px solid var(--borda-sutil);
     text-align: center;
 }
 
-.media-gols th:first-child,
-.media-gols td:first-child {
+.media-gols__tabela th:first-child,
+.media-gols__tabela td:first-child {
     text-align: left;
 }
 
-.media-gols tr:hover {
+.media-gols__tabela tr:hover {
     background: var(--cor-primaria-hover);
 }
 
-/* ====== RESPONSIVIDADE ====== */
+/* ====== RESPONSIVO ====== */
 @media (max-width: 900px) {
-    .top-row {
+    .liga-container__linha-superior {
         flex-direction: column;
     }
 }
-
-
-.league-nav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    background: var(--fundo-pagina);
-    padding: 1.2rem 0;
-    border-bottom: 1px solid var(--borda-sutil);
-}
-
-.league-nav a {
-    font-size: 1.6rem;
-    color: var(--cor-primaria);
-    text-decoration: none;
-    padding: .6rem 1.2rem;
-    border-radius: .6rem;
-    transition: .2s;
-}
-
-.league-nav a:hover {
-    background: var(--fundo-cartao);
-    color: var(--cor-primaria-hover);
-}
-

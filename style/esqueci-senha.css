@@ -1,5 +1,5 @@
-/* === MAIN (conteúdo centralizado e flexível) === */
-main {
+/* === MAIN === */
+.redefinir-senha {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -7,32 +7,32 @@ main {
     padding: 4rem 1.6rem;
 }
 
-/* Card do formulário */
-.form-card {
+/* CARD */
+.redefinir-senha__card {
     width: 36rem;
-    background: var(--fundo-cartao); 
+    background: var(--fundo-cartao);
     padding: 3.2rem;
     border-radius: 1.6rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     text-align: center;
 }
 
-/* Tipografia do formulário */
-.form-card h1 {
+/* TITULOS + TEXTO */
+.redefinir-senha__titulo {
     font-size: 2.8rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
-    color: var(--texto-principal); 
+    color: var(--texto-principal);
 }
 
-.form-card p {
+.redefinir-senha__descricao {
     font-size: 1.6rem;
     margin-bottom: 2.4rem;
-    color: var(--texto-principal); 
+    color: var(--texto-principal);
 }
 
-/* Inputs */
-.form-card input {
+/* INPUT */
+.redefinir-senha__campo {
     width: 100%;
     padding: 1.2rem;
     margin-bottom: 1.6rem;
@@ -42,37 +42,36 @@ main {
     font-size: 1.4rem;
 }
 
-/* Placeholder mais claro */
-.form-card input::placeholder {
+.redefinir-senha__campo::placeholder {
     color: var(--texto-secundario);
 }
 
-/* Botão principal */
-.btn-submit {
+/* BOTÃO */
+.redefinir-senha__botao {
     width: 100%;
     padding: 1.2rem;
     background: var(--cor-primaria);
     border: none;
     border-radius: 0.8rem;
-    color: var(--cor-texto-invertido); 
+    color: var(--cor-texto-invertido);
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.btn-submit:hover {
+.redefinir-senha__botao:hover {
     background: var(--cor-primaria-hover);
 }
 
-/* Link auxiliar */
-.toggle {
+/* LINK ALTERNAR */
+.redefinir-senha__alternar {
     margin-top: 1.6rem;
     font-size: 1.4rem;
     color: var(--texto-principal);
 }
 
-.toggle a {
+.redefinir-senha__alternar-link {
     color: #2563eb;
     font-size: 1.4rem;
     font-weight: 600;

@@ -1,98 +1,106 @@
-const header = document.querySelector("#header");
-const headerLogado = document.querySelector("#header-logado");
-const footer = document.querySelector("#footer");
+const cabecalho = document.querySelector("#cabecalho");
+const cabecalhoLogado = document.querySelector("#cabecalho-logado");
+const rodape = document.querySelector("#rodape");
 
 
-if(header){
-    header.innerHTML = `
+// ===== CABEÇALHO NORMAL =====
+if (cabecalho) {
+    cabecalho.innerHTML = `
 <nav class="navbar">
-    <a href="index.html">
-      <div class="logo">GOAL RADAR</div>
-    </a>
+    <a href="index.html" class="navbar__logo">GOAL RADAR</a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre Nós</a></li>
+    <ul class="navbar__links">
+      <li class="navbar__item"><a class="navbar__link" href="index.html">Início</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="sobre.html">Sobre Nós</a></li>
     </ul>
 
-    <a href="login.html" class="btn-login">Login</a>
-  </nav>`;
+    <a href="login.html" class="navbar__botao-login">Login</a>
+</nav>`;
 }
 
- if(headerLogado){
-    headerLogado.innerHTML = `
-  <nav class="navbar">
-    <div class="logo">LOGO</div>
+// ===== CABEÇALHO LOGADO =====
+if (cabecalhoLogado) {
+    cabecalhoLogado.innerHTML = `
+<nav class="navbar">
+    <a href="index.html" class="navbar__logo">GOAL RADAR</a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre Nós</a></li>
-      <li><a href="ligas-premier-league.html">Ligas</a></li>
+    <ul class="navbar__links">
+      <li class="navbar__item"><a class="navbar__link" href="index.html">Início</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="sobre.html">Sobre Nós</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="ligas-premier-league.html">Ligas</a></li>
     </ul>
 
-    <div class="user-area">
-      <a href="perfil.html"><img src="imgs/user.jpg" alt="Foto do usuário" class="user-avatar"></a>
-      <a href="login.html" class="btn-login">Logout</a>
+    <div class="navbar__usuario">
+      <a href="perfil.html" class="navbar__usuario-link">
+         <img src="imgs/user.jpg" alt="Foto do usuário" class="navbar__usuario-avatar">
+      </a>
+      <a href="login.html" class="navbar__botao-login">Logout</a>
     </div>
-  </nav>`;
- }
+</nav>`;
+}
 
- if(footer){
-    footer.innerHTML = `
-    <div class="footer-container">
+// ===== RODAPÉ =====
+ if (rodape) {
+    rodape.innerHTML = `
+<footer class="rodape">
 
-      <!-- Seção Institucional -->
-      <div class="footer-col">
-        <h3>Empresa</h3>
-        <ul>
-          <li><a href="#">Sobre Nós</a></li>
-          <li><a href="#">Carreiras</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Imprensa</a></li>
-        </ul>
-      </div>
+  <div class="rodape__container">
 
-      <!-- Seção de Suporte -->
-      <div class="footer-col">
-        <h3>Suporte</h3>
-        <ul>
-          <li><a href="#">Ajuda</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Documentação</a></li>
-        </ul>
-      </div>
-
-      <!-- Seção Legal -->
-      <div class="footer-col">
-        <h3>Legal</h3>
-        <ul>
-          <li><a href="#">Termos de Uso</a></li>
-          <li><a href="#">Política de Privacidade</a></li>
-          <li><a href="#">Cookies</a></li>
-        </ul>
-      </div>
-
-      <!-- Contato + Redes Sociais -->
-      <div class="footer-col">
-        <h3>Contato</h3>
-        <ul>
-          <li>Email: contato@empresa.com</li>
-          <li>Telefone: (00) 0000-0000</li>
-        </ul>
-
-        <div class="social">
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">Facebook</a>
-        </div>
-      </div>
-
+    <!-- COLUNA INSTITUCIONAL -->
+    <div class="rodape__coluna">
+      <h3 class="rodape__titulo">Empresa</h3>
+      <ul class="rodape__lista">
+        <li class="rodape__item"><a href="#" class="rodape__link">Sobre Nós</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">Carreiras</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">Blog</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">Imprensa</a></li>
+      </ul>
     </div>
 
-    <!-- Linha de direitos autorais -->
-    <div class="footer-bottom">
-      © 2025 Nome da Empresa. Todos os direitos reservados.
-    </div>`;
- }
+    <!-- COLUNA SUPORTE -->
+    <div class="rodape__coluna">
+      <h3 class="rodape__titulo">Suporte</h3>
+      <ul class="rodape__lista">
+        <li class="rodape__item"><a href="#" class="rodape__link">Ajuda</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">Contato</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">FAQ</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">Documentação</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUNA LEGAL -->
+    <div class="rodape__coluna">
+      <h3 class="rodape__titulo">Legal</h3>
+      <ul class="rodape__lista">
+        <li class="rodape__item"><a href="#" class="rodape__link">Termos de Uso</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">Política de Privacidade</a></li>
+        <li class="rodape__item"><a href="#" class="rodape__link">Cookies</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTATO E REDES SOCIAIS -->
+    <div class="rodape__coluna">
+      <h3 class="rodape__titulo">Contato</h3>
+
+      <ul class="rodape__lista">
+        <li class="rodape__item">Email: contato@empresa.com</li>
+        <li class="rodape__item">Telefone: (00) 0000-0000</li>
+      </ul>
+
+      <div class="rodape__redes">
+        <a href="#" class="rodape__rede">Instagram</a>
+        <a href="#" class="rodape__rede">LinkedIn</a>
+        <a href="#" class="rodape__rede">Facebook</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DIREITOS AUTORAIS -->
+  <div class="rodape__direitos">
+    © 2025 Nome da Empresa. Todos os direitos reservados.
+  </div>
+
+</footer>`;
+}
   

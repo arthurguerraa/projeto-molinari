@@ -1,3 +1,4 @@
+/* MAIN */
 main {
     color: var(--fundo-pagina);
     flex: 1;
@@ -6,8 +7,8 @@ main {
     align-items: center;
 }
 
-/* === CONTAINER LOGIN === */
-.container {
+/* === BLOCO LOGIN === */
+.login__container {
     background: var(--fundo-cartao); 
     width: 360px;
     padding: 32px;
@@ -17,19 +18,19 @@ main {
     text-align: center;
 }
 
-.container h1 {
+.login__titulo {
     font-size: 2.8rem;
     margin-bottom: 0.8rem;
     color: var(--texto-principal);
 }
 
-.container p {
+.login__descricao {
     font-size: 1.6rem;
     margin-bottom: 2.4rem;
     color: var(--texto-principal);
 }
 
-input {
+.login__campo {
     width: 100%;
     padding: 1.2rem;
     margin-bottom: 1.6rem;
@@ -40,11 +41,11 @@ input {
     border: 1px solid var(--borda-sutil); 
 }
 
-input::placeholder {
+.login__campo::placeholder {
     color: var(--texto-principal); 
 }
 
-button {
+.login__botao {
     width: 100%;
     padding: 12px;
     background: var(--cor-primaria); 
@@ -57,23 +58,23 @@ button {
     transition: 0.2s;
 }
 
-button:hover {
+.login__botao:hover {
     background: var(--cor-primaria-hover); 
 }
 
-.resetsenha {
+.login__recuperar-senha {
     margin-top: 1rem;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
 }
 
-.toggle {
-    margin-top: 16px;
+.login__alternar-acesso {
+    margin-top: 1.6rem;
     font-size: 1.4rem;
     color: var(--texto-principal); 
 }
 
-.toggle a,
-.container a {
+.login__alternar-acesso a,
+.login__container a {
     color: #2563eb;
     font-size: 1.4rem;
     font-weight: bold;

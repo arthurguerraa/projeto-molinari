@@ -1,11 +1,11 @@
-.footer {
+.rodape {
     background: var(--fundo-pagina);
     color: var(--texto-principal);
     padding: 4rem 0 2rem;
     font-family: Arial, sans-serif;
 }
 
-.footer-container {
+.rodape__container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -15,52 +15,56 @@
     gap: 4rem;
 }
 
-.footer-col h3 {
+.rodape__coluna {}
+
+.rodape__titulo {
     color: var(--cor-branco);
     font-size: 1.8rem;
     margin-bottom: 1.4rem;
 }
 
-.footer-col ul {
+.rodape__lista {
     list-style: none;
     padding: 0;
 }
 
-.footer-col ul li {
+.rodape__item {
     margin: 0.8rem 0;
     font-size: 1.8rem;
 }
 
-.footer-col ul li a {
+.rodape__link {
     color: var(--cor-texto-cinza);
     text-decoration: none;
 }
 
-.footer-col ul li a:hover {
+.rodape__link:hover {
     color: var(--texto-secundario);
 }
 
-.social {
+/* Redes sociais */
+.rodape__redes {
     margin-top: 1.6rem;
     display: flex;
     gap: 1.4rem;
 }
 
-.social a {
+.rodape__rede {
     color: var(--texto-principal);
     text-decoration: none;
     font-size: 1.4rem;
 }
 
-.social a:hover {
+.rodape__rede:hover {
     color: var(--texto-secundario);
 }
 
-.footer-bottom {
+/* Linha inferior (direitos autorais) */
+.rodape__direitos {
     margin-top: 3rem;
     text-align: center;
     font-size: 1.3rem;
     color: var(--cor-texto-cinza);
-    border-top: 1px solid var(--borda-sutil); 
+    border-top: 1px solid var(--borda-sutil);
     padding-top: 1.6rem;
 }

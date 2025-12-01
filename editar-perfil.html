@@ -14,53 +14,53 @@
 </head>
 
 <body>
-  <header id="header-logado"></header>
+  <header id="cabecalho-logado"></header>
   <!-- MAIN -->
-  <main class="edit-container">
+  <main class="editar-perfil">
 
     <!-- CARD -->
-    <section class="edit-card">
+    <section class="editar-perfil__card">
 
-      <h1>Editar Perfil</h1>
+      <h1 class="editar-perfil__titulo">Editar Perfil</h1>
 
       <!-- FOTO -->
-      <div class="edit-photo">
-        <img src="https://via.placeholder.com/120" class="avatar">
-        <div>
-          <label class="btn-upload">
-            Trocar Foto
-            <input type="file" accept="image/*">
-          </label>
-        </div>
+      <div class="editar-perfil__foto">
+        <img src="https://via.placeholder.com/120" class="editar-perfil__avatar">
+        
+        <label class="editar-perfil__btn-upload">
+          Trocar Foto
+          <input type="file" accept="image/*">
+        </label>
       </div>
 
-      <!-- INPUTS -->
-      <form class="edit-form">
+      <!-- FORMULÁRIO -->
+      <form class="editar-perfil__formulario">
 
-        <label>Nome</label>
-        <input type="text" placeholder="Seu nome">
+        <label class="editar-perfil__label">Nome</label>
+        <input type="text" class="editar-perfil__input" placeholder="Seu nome">
 
-        <label>Email</label>
-        <input type="email" placeholder="Seu email">
+        <label class="editar-perfil__label">Email</label>
+        <input type="email" class="editar-perfil__input" placeholder="Seu email">
 
-        <label>Senha</label>
-        <input type="password" placeholder="Digite sua nova senha">
+        <label class="editar-perfil__label">Senha</label>
+        <input type="password" class="editar-perfil__input" placeholder="Digite sua nova senha">
 
       </form>
 
       <!-- BOTÕES -->
-      <div class="buttons">
-        <button class="btn-save">Salvar Alterações</button>
-        <button class="btn-cancel">Cancelar</button>
-        <button class="btn-delete">Excluir Conta</button>
+      <div class="editar-perfil__botoes">
+        <button class="editar-perfil__botao editar-perfil__botao--salvar">Salvar Alterações</button>
+        <button class="editar-perfil__botao editar-perfil__botao--cancelar">Cancelar</button>
+        <button class="editar-perfil__botao editar-perfil__botao--excluir">Excluir Conta</button>
       </div>
 
     </section>
 
-  </main>
+</main>
+
 
   <!-- FOOTER -->
-  <footer class="footer" id="footer"></footer>
+  <footer class="rodape" id="rodape"></footer>
   <script src="layout.js"></script>
 </body>
 

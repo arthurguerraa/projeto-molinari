@@ -11,26 +11,29 @@
 </head>
 
 <body>
-  <header id="header"></header>
+  <header id="cabecalho"></header>
   <!-- MAIN: conteúdo principal (entre navbar e footer) -->
   <main>
-    <div class="form-card">
-      <h1>Redefinir Senha</h1>
-      <p>Digite sua nova senha abaixo para continuar</p>
+  <div class="reset-senha__container">
 
-      <input type="password" placeholder="Nova senha" />
-      <input type="password" placeholder="Confirmar nova senha" />
+    <h1 class="reset-senha__titulo">Redefinir Senha</h1>
+    <p class="reset-senha__descricao">Digite sua nova senha abaixo para continuar</p>
 
-      <button class="btn-submit">Redefinir Senha</button>
+    <input type="password" placeholder="Nova senha" class="reset-senha__campo" />
+    <input type="password" placeholder="Confirmar nova senha" class="reset-senha__campo" />
 
-      <div class="toggle">
-        Lembrou sua senha? <a href="login.html">Entrar</a>
-      </div>
+    <button class="reset-senha__botao">Redefinir Senha</button>
+
+    <div class="reset-senha__alternar-acesso">
+      Lembrou sua senha? <a href="login.html">Entrar</a>
     </div>
-  </main>
+
+  </div>
+</main>
+
 
   <!-- FOOTER (mesmo do index) -->
-  <footer class="footer" id="footer"></footer>
+  <footer class="rodape" id="rodape"></footer>
   <script src="layout.js"></script>
 </body>
 

@@ -9,26 +9,30 @@
   <link rel="stylesheet" href="style/footer.css">
   <link rel="stylesheet" href="style/esqueci-senha.css">
 </head>
-<header id="header"></header>
+<header id="cabecalho"></header>
 <body>
   <!-- MAIN: conteúdo principal (entre navbar e footer) -->
-  <main>
-    <div class="form-card">
-      <h1>Redefinir Senha</h1>
-      <p>Digite seu e-mail para receber o código de redefinição de senha</p>
+  <main class="redefinir-senha">
+    <div class="redefinir-senha__card">
+        <h1 class="redefinir-senha__titulo">Redefinir Senha</h1>
+        <p class="redefinir-senha__descricao">
+            Digite seu e-mail para receber o código de redefinição de senha
+        </p>
 
-      <input type="password" placeholder="Email" />
+        <input class="redefinir-senha__campo" type="email" placeholder="Email" />
 
-      <button class="btn-submit">Redefinir Senha</button>
+        <button class="redefinir-senha__botao">Redefinir Senha</button>
 
-      <div class="toggle">
-        Lembrou sua senha? <a href="login.html">Entrar</a>
-      </div>
+        <div class="redefinir-senha__alternar">
+            Lembrou sua senha? 
+            <a class="redefinir-senha__alternar-link" href="login.html">Entrar</a>
+        </div>
     </div>
-  </main>
+</main>
+
 
   <!-- FOOTER (mesmo do index) -->
-  <footer class="footer" id="footer"></footer>
+  <footer class="rodape" id="rodape"></footer>
   <script src="layout.js"></script>
 </body>
 </html>
