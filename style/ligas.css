@@ -73,7 +73,6 @@
     background: var(--cor-primaria-hover);
 }
 
-/* ====== MÉDIA DE GOLS ====== */
 .media-gols__tabela {
     width: 100%;
     border-collapse: collapse;
@@ -93,8 +92,23 @@
     text-align: left;
 }
 
-.media-gols__tabela tr:hover {
-    background: var(--cor-primaria-hover);
+/* ====== MÉDIA DE GOLS — Cores por tipo ====== */
+
+/* Gols Marcados (Casa e Fora) → Verde */
+.media-gols__corpo .media-gols__linha td:nth-child(2),
+.media-gols__corpo .media-gols__linha td:nth-child(4) {
+    background: rgba(16, 185, 129, 0.20);
+}
+
+/* Gols Sofridos (Casa e Fora) → Vermelho */
+.media-gols__corpo .media-gols__linha td:nth-child(3),
+.media-gols__corpo .media-gols__linha td:nth-child(5) {
+    background: rgba(239, 68, 68, 0.20);
+}
+
+/* Remove o fundo colorido do header */
+.media-gols__cabecalho th {
+    background: transparent;
 }
 
 /* ====== RESPONSIVO ====== */
