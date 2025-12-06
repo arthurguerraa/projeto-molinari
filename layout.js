@@ -98,7 +98,7 @@ if (cabecalhoLogado) {
 
   <!-- DIREITOS AUTORAIS -->
   <div class="rodape__direitos">
-    © 2025 Nome da Empresa. Todos os direitos reservados.
+    © 2025 Goal Radar. Todos os direitos reservados.
   </div>
 
 </footer>`;
