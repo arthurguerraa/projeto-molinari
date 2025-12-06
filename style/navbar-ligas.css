@@ -1,0 +1,61 @@
+/* ===== NAVBAR LIGAS ===== */
+.navbar-ligas {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.6rem 0;
+    background: var(--fundo-pagina); /* Usa o fundo padrão das caixas */
+    border-top: 1px solid var(--borda-sutil);
+    border-bottom: 1px solid var(--borda-sutil);
+    margin-bottom: 2.4rem;
+}
+
+.navbar-ligas a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--texto-principal);
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.8rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Hover */
+.navbar-ligas a:hover {
+    background: var(--cor-primaria);
+    color: white;
+}
+
+/* Página ativa (se quiser marcar futuramente por classe) */
+.navbar-ligas__ativo {
+    background: var(--cor-primaria);
+    color: white;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .navbar-ligas {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+
+    .navbar-ligas a {
+        font-size: 1.4rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-ligas {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .navbar-ligas a {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}
