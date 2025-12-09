@@ -4,7 +4,7 @@
 */
 
 const fakeRounds = [
-  // Rodada 1 (exemplo)
+  // Rodada 1
   {
     rodada: 1,
     jogos: [
@@ -12,7 +12,12 @@ const fakeRounds = [
       { casa: "Liverpool", fora: "Manchester City", data: "30/11", placar: "1-3" },
       { casa: "Tottenham", fora: "Newcastle", data: "01/12", placar: "0-0" },
       { casa: "Manchester United", fora: "Everton", data: "01/12", placar: "2-2" },
-      { casa: "Aston Villa", fora: "Brighton", data: "01/12", placar: "1-0" }
+      { casa: "Aston Villa", fora: "Brighton", data: "01/12", placar: "1-0" },
+      { casa: "West Ham", fora: "Wolves", data: "01/12", placar: "1-1" },
+      { casa: "Crystal Palace", fora: "Fulham", data: "01/12", placar: "2-0" },
+      { casa: "Bournemouth", fora: "Brentford", data: "01/12", placar: "1-3" },
+      { casa: "Nottingham Forest", fora: "Southampton", data: "02/12", placar: "0-2" },
+      { casa: "Leicester", fora: "Leeds", data: "02/12", placar: "2-1" }
     ]
   },
 
@@ -24,7 +29,12 @@ const fakeRounds = [
       { casa: "Manchester City", fora: "Arsenal", data: "06/12", placar: null },
       { casa: "Brighton", fora: "Tottenham", data: "07/12", placar: null },
       { casa: "Newcastle", fora: "Manchester United", data: "07/12", placar: null },
-      { casa: "Everton", fora: "Aston Villa", data: "07/12", placar: null }
+      { casa: "Everton", fora: "Aston Villa", data: "07/12", placar: null },
+      { casa: "Wolves", fora: "Crystal Palace", data: "07/12", placar: null },
+      { casa: "Fulham", fora: "West Ham", data: "07/12", placar: null },
+      { casa: "Brentford", fora: "Nottingham Forest", data: "07/12", placar: null },
+      { casa: "Southampton", fora: "Bournemouth", data: "08/12", placar: null },
+      { casa: "Leeds", fora: "Leicester", data: "08/12", placar: null }
     ]
   },
 
@@ -36,7 +46,12 @@ const fakeRounds = [
       { casa: "Chelsea", fora: "Tottenham", data: "13/12", placar: null },
       { casa: "Manchester United", fora: "Manchester City", data: "14/12", placar: null },
       { casa: "Brighton", fora: "Newcastle", data: "14/12", placar: null },
-      { casa: "Aston Villa", fora: "Everton", data: "14/12", placar: null }
+      { casa: "Aston Villa", fora: "Everton", data: "14/12", placar: null },
+      { casa: "West Ham", fora: "Bournemouth", data: "14/12", placar: null },
+      { casa: "Crystal Palace", fora: "Brentford", data: "14/12", placar: null },
+      { casa: "Fulham", fora: "Leeds", data: "15/12", placar: null },
+      { casa: "Wolves", fora: "Southampton", data: "15/12", placar: null },
+      { casa: "Nottingham Forest", fora: "Leicester", data: "15/12", placar: null }
     ]
   },
 
@@ -48,7 +63,12 @@ const fakeRounds = [
       { casa: "Arsenal", fora: "Manchester United", data: "20/12", placar: null },
       { casa: "Chelsea", fora: "Brighton", data: "21/12", placar: null },
       { casa: "Manchester City", fora: "Newcastle", data: "21/12", placar: null },
-      { casa: "Everton", fora: "Leicester", data: "21/12", placar: null }
+      { casa: "Everton", fora: "Leicester", data: "21/12", placar: null },
+      { casa: "Bournemouth", fora: "Wolves", data: "21/12", placar: null },
+      { casa: "Crystal Palace", fora: "Aston Villa", data: "21/12", placar: null },
+      { casa: "Brentford", fora: "Fulham", data: "22/12", placar: null },
+      { casa: "Leeds", fora: "Southampton", data: "22/12", placar: null },
+      { casa: "Nottingham Forest", fora: "West Ham", data: "22/12", placar: null }
     ]
   },
 
@@ -60,10 +80,16 @@ const fakeRounds = [
       { casa: "Manchester United", fora: "Chelsea", data: "27/12", placar: null },
       { casa: "Brighton", fora: "Liverpool", data: "28/12", placar: null },
       { casa: "Newcastle", fora: "Aston Villa", data: "28/12", placar: null },
-      { casa: "Manchester City", fora: "Everton", data: "28/12", placar: null }
+      { casa: "Manchester City", fora: "Everton", data: "28/12", placar: null },
+      { casa: "Leicester", fora: "Crystal Palace", data: "28/12", placar: null },
+      { casa: "Southampton", fora: "West Ham", data: "28/12", placar: null },
+      { casa: "Wolves", fora: "Fulham", data: "29/12", placar: null },
+      { casa: "Brentford", fora: "Leeds", data: "29/12", placar: null },
+      { casa: "Bournemouth", fora: "Nottingham Forest", data: "29/12", placar: null }
     ]
   }
 ];
+
 
 let rodadaAtualIndex = 0; // índice em fakeRounds
 

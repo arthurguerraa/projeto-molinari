@@ -2,94 +2,96 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ligas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ligas</title>
 
-    <link rel="stylesheet" href="style/global.css">
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/navbar-ligas.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/ligas.css">
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/navbar-ligas.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/ligas.css">
 </head>
 
 <body>
-   <header id="cabecalho-logado"></header>
-    <nav class="league-nav">
-        <a href="ligas-premier-league.html">Premier League</a>
-        <a href="ligas-brasileirao.html">Brasileirão</a>
-        <a href="ligas-la-liga.html">La Liga</a>
-        <a href="ligas-bundesliga.html">Bundesliga</a>
-        <a href="ligas-serie-a.html">Serie A</a>
-        <a href="ligas-ligue-1.html">Ligue 1</a>
-    </nav>
-    <nav class="navbar-ligas">
-        <a href="ligas-premier-league.html">Premier League</a>
-        <a href="ligas-brasileirao.html">Brasileirão</a>
-        <a href="ligas-la-liga.html">La Liga</a>
-        <a href="ligas-bundesliga.html">Bundesliga</a>
-        <a href="ligas-serie-a.html">Serie A</a>
-        <a href="ligas-ligue-1.html">Ligue 1</a>
-    </nav>
+  <header id="cabecalho-logado"></header>
+  <nav class="league-nav">
+    <a href="ligas-premier-league.html">Premier League</a>
+    <a href="ligas-brasileirao.html">Brasileirão</a>
+    <a href="ligas-la-liga.html">La Liga</a>
+    <a href="ligas-bundesliga.html">Bundesliga</a>
+    <a href="ligas-serie-a.html">Serie A</a>
+    <a href="ligas-ligue-1.html">Ligue 1</a>
+  </nav>
+  <nav class="navbar-ligas">
+    <a href="ligas-premier-league.html">Premier League</a>
+    <a href="ligas-brasileirao.html">Brasileirão</a>
+    <a href="ligas-la-liga.html">La Liga</a>
+    <a href="ligas-bundesliga.html">Bundesliga</a>
+    <a href="ligas-serie-a.html">Serie A</a>
+    <a href="ligas-ligue-1.html">Ligue 1</a>
+  </nav>
 
-    <main class="liga-container">
+  <main class="liga-container">
 
     <!-- PRIMEIRA LINHA: TABELA + CONFRONTOS -->
     <div class="liga-container__linha-superior">
 
-        <!-- TABELA DO CAMPEONATO -->
-        <section class="caixa caixa--tabela-campeonato tabela-campeonato">
-            <h2 class="tabela-campeonato__titulo">Tabela do Campeonato</h2>
+      <!-- TABELA DO CAMPEONATO -->
+      <section class="caixa caixa--tabela-campeonato tabela-campeonato">
+        <h2 class="tabela-campeonato__titulo">Tabela do Campeonato</h2>
 
-            <table class="tabela-campeonato__tabela">
-                <thead class="tabela-campeonato__cabecalho">
-                    <tr class="tabela-campeonato__linha">
-                        <th>#</th>
-                        <th>Time</th>
-                        <th>P</th>
-                        <th>J</th>
-                        <th>V</th>
-                        <th>E</th>
-                        <th>D</th>
-                        <th>GP</th>
-                        <th>GC</th>
-                        <th>SG</th>
-                    </tr>
-                </thead>
+        <table class="tabela-campeonato__tabela">
+          <thead class="tabela-campeonato__cabecalho">
+            <tr class="tabela-campeonato__linha">
+              <th>#</th>
+              <th>Time</th>
+              <th>P</th>
+              <th>J</th>
+              <th>V</th>
+              <th>E</th>
+              <th>D</th>
+              <th>GP</th>
+              <th>GC</th>
+              <th>SG</th>
+            </tr>
+          </thead>
 
-                <tbody id="tabela-campeonato__corpo" class="tabela-campeonato__corpo">
-                    <!-- preenchido via JS -->
-                </tbody>
-            </table>
-        </section>
+          <tbody id="tabela-campeonato__corpo" class="tabela-campeonato__corpo">
+            <!-- preenchido via JS -->
+          </tbody>
+        </table>
+      </section>
 
       <!-- CONFRONTOS DA RODADA (com navegação) -->
-<section class="caixa caixa--confrontos-rodada confrontos-rodada">
-  <div class="confrontos-rodada__topo">
-    <h2 class="confrontos-rodada__titulo">Rodada <span id="confrontos-rodada__numero">1</span></h2>
+      <section class="caixa caixa--confrontos-rodada confrontos-rodada">
+        <div class="confrontos-rodada__topo">
+          <h2 class="confrontos-rodada__titulo">Rodada <span id="confrontos-rodada__numero">1</span></h2>
 
-    <!-- controles de navegação -->
-    <div class="confrontos-rodada__nav">
-      <button class="confrontos-rodada__btn confrontos-rodada__btn--anterior" id="btn-rodada-anterior" aria-label="Rodada anterior">◀</button>
-      <button class="confrontos-rodada__btn confrontos-rodada__btn--proxima" id="btn-rodada-proxima" aria-label="Próxima rodada">▶</button>
-    </div>
-  </div>
+          <!-- controles de navegação -->
+          <div class="confrontos-rodada__nav">
+            <button class="confrontos-rodada__btn confrontos-rodada__btn--anterior" id="btn-rodada-anterior"
+              aria-label="Rodada anterior">◀</button>
+            <button class="confrontos-rodada__btn confrontos-rodada__btn--proxima" id="btn-rodada-proxima"
+              aria-label="Próxima rodada">▶</button>
+          </div>
+        </div>
 
-  <table class="confrontos-rodada__tabela">
-    <thead class="confrontos-rodada__cabecalho">
-      <tr class="confrontos-rodada__linha">
-        <th>Casa</th>
-        <th></th>
-        <th>Fora</th>
-        <th>Data</th>
-      </tr>
-    </thead>
+        <table class="confrontos-rodada__tabela">
+          <thead class="confrontos-rodada__cabecalho">
+            <tr class="confrontos-rodada__linha">
+              <th>Casa</th>
+              <th></th>
+              <th>Fora</th>
+              <th>Data</th>
+            </tr>
+          </thead>
 
-    <tbody id="confrontos-rodada__corpo" class="confrontos-rodada__corpo">
-      <!-- renderizado por JS -->
-    </tbody>
-  </table>
-</section>
+          <tbody id="confrontos-rodada__corpo" class="confrontos-rodada__corpo">
+            <!-- renderizado por JS -->
+          </tbody>
+        </table>
+      </section>
 
 
 
@@ -97,29 +99,30 @@
 
     <!-- MÉDIA DE GOLS -->
     <section class="caixa caixa--media-gols media-gols">
-        <h2 class="media-gols__titulo">Média de Gols — Casa & Fora</h2>
+      <h2 class="media-gols__titulo">Média de Gols — Casa & Fora</h2>
 
-        <table class="media-gols__tabela">
-            <thead class="media-gols__cabecalho">
-                <tr class="media-gols__linha">
-                    <th>Time</th>
-                    <th>MG Marc (Casa)</th>
-                    <th>MG Sofr (Casa)</th>
-                    <th>MG Marc (Fora)</th>
-                    <th>MG Sofr (Fora)</th>
-                </tr>
-            </thead>
+      <table class="media-gols__tabela">
+        <thead class="media-gols__cabecalho">
+          <tr class="media-gols__linha">
+            <th>Time</th>
+            <th>MG Marc (Casa)</th>
+            <th>MG Sofr (Casa)</th>
+            <th>MG Marc (Fora)</th>
+            <th>MG Sofr (Fora)</th>
+          </tr>
+        </thead>
 
-            <tbody class="media-gols__corpo"></tbody>
-        </table>
+        <tbody class="media-gols__corpo"></tbody>
+      </table>
     </section>
 
-</main>
+  </main>
 
-    <footer class="rodape" id="rodape"></footer>
-    <script src="layout.js"></script>
-    <script src="data/tabela-bundesliga.js"></script>
-     <script type="module" src="data/confrontos-bundesliga.js"></script>
+  <footer class="rodape" id="rodape"></footer>
+  <script src="layout.js"></script>
+  <script src="data/tabela-bundesliga.js"></script>
+  <script type="module" src="data/confrontos-bundesliga.js"></script>
+  <script type="module" src="scripts/render-goals-bundesliga.js"></script>
 </body>
 
 </html>
