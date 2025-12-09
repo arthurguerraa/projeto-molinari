@@ -73,26 +73,78 @@
     background: var(--cor-primaria-hover);
 }
 
-.media-gols__tabela {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 6.6rem;
+/* NAV DE RODADAS (setas) */
+.confrontos-rodada__topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.confrontos-rodada__nav {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+}
+
+/* botões pequenos */
+.confrontos-rodada__btn {
+    background: var(--fundo-cartao);
+    border: 1px solid var(--borda-sutil);
+    padding: .6rem .9rem;
+    border-radius: .6rem;
+    font-size: 2.4rem;
+    cursor: pointer;
     color: var(--texto-principal);
+    transition: .15s;
 }
 
-.media-gols__tabela th,
-.media-gols__tabela td {
-    padding: 0.8rem;
-    border-bottom: 1px solid var(--borda-sutil);
+.confrontos-rodada__btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+.confrontos-rodada__btn:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+/* placar com estilo separado (célula do meio) */
+.confrontos-rodada__placar {
+    font-weight: 700;
+    min-width: 6rem;
+}
+
+/* linha de probabilidades (aquela que ocupa toda a largura) */
+.confrontos-rodada__probabilidades td {
     text-align: center;
+    font-size: 1.6rem;
+    color: var(--texto-secundario);
+    background: rgba(0,0,0,0.03);
 }
 
-.media-gols__tabela th:first-child,
-.media-gols__tabela td:first-child {
-    text-align: left;
+/* responsividade: reduz font-size em telas pequenas */
+@media (max-width: 900px) {
+    .confrontos-rodada__tabela,
+    .media-gols__tabela {
+        font-size: 3.6rem; /* adaptado para mobile */
+    }
+
+    .confrontos-rodada__btn {
+        font-size: 2rem;
+        padding: .4rem .6rem;
+    }
+
+    .confrontos-rodada__probabilidades td {
+        font-size: 1.4rem;
+    }
 }
+
 
 /* ====== MÉDIA DE GOLS — Cores por tipo ====== */
+
+.media-gols__tabela { width: 100%; border-collapse: collapse; font-size: 6.6rem; color: var(--texto-principal); } .media-gols__tabela th, .media-gols__tabela td { padding: 0.8rem; border-bottom: 1px solid var(--borda-sutil); text-align: center; }
 
 /* Gols Marcados (Casa e Fora) → Verde */
 .media-gols__corpo .media-gols__linha td:nth-child(2),

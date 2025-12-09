@@ -55,25 +55,34 @@
             </table>
         </section>
 
-       <!-- CONFRONTOS DA RODADA -->
+      <!-- CONFRONTOS DA RODADA (com navegação) -->
 <section class="caixa caixa--confrontos-rodada confrontos-rodada">
-    <h2 class="confrontos-rodada__titulo">Rodada 1</h2>
+  <div class="confrontos-rodada__topo">
+    <h2 class="confrontos-rodada__titulo">Rodada <span id="confrontos-rodada__numero">1</span></h2>
 
-    <table class="confrontos-rodada__tabela">
-        <thead class="confrontos-rodada__cabecalho">
-            <tr class="confrontos-rodada__linha">
-                <th>Casa</th>
-                <th></th>
-                <th>Fora</th>
-                <th>Data</th>
-            </tr>
-        </thead>
+    <!-- controles de navegação -->
+    <div class="confrontos-rodada__nav">
+      <button class="confrontos-rodada__btn confrontos-rodada__btn--anterior" id="btn-rodada-anterior" aria-label="Rodada anterior">◀</button>
+      <button class="confrontos-rodada__btn confrontos-rodada__btn--proxima" id="btn-rodada-proxima" aria-label="Próxima rodada">▶</button>
+    </div>
+  </div>
 
-        <tbody id="confrontos-rodada__corpo" class="confrontos-rodada__corpo">
-            <!-- JS -->
-        </tbody>
-    </table>
+  <table class="confrontos-rodada__tabela">
+    <thead class="confrontos-rodada__cabecalho">
+      <tr class="confrontos-rodada__linha">
+        <th>Casa</th>
+        <th></th>
+        <th>Fora</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+
+    <tbody id="confrontos-rodada__corpo" class="confrontos-rodada__corpo">
+      <!-- renderizado por JS -->
+    </tbody>
+  </table>
 </section>
+
 
 
     </div>
