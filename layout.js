@@ -11,7 +11,6 @@ if (cabecalho) {
 
     <ul class="navbar__links">
       <li class="navbar__item"><a class="navbar__link" href="index.html">Início</a></li>
-      <li class="navbar__item"><a class="navbar__link" href="sobre.html">Sobre Nós</a></li>
     </ul>
 
     <a href="login.html" class="navbar__botao-login">Login</a>
@@ -26,7 +25,6 @@ if (cabecalhoLogado) {
 
     <ul class="navbar__links">
       <li class="navbar__item"><a class="navbar__link" href="index.html">Início</a></li>
-      <li class="navbar__item"><a class="navbar__link" href="sobre.html">Sobre Nós</a></li>
       <li class="navbar__item"><a class="navbar__link" href="ligas-premier-league.html">Ligas</a></li>
     </ul>
 
