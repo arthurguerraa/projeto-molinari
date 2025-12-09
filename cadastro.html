@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,29 @@
 </head>
 
 <body>
-<header id="cabecalho"></header>
-    <!-- MAIN -->
-    <main class="cadastro">
+    <header id="cabecalho"></header>
+   <main class="cadastro">
     <div class="cadastro__container">
         <h1 class="cadastro__titulo">Cadastro</h1>
         <p class="cadastro__subtitulo">Crie sua conta para acessar a plataforma</p>
 
-        <input class="cadastro__campo" type="text" placeholder="Nome completo">
-        <input class="cadastro__campo"type="date"  placeholder="Data de nascimento">
-        <input class="cadastro__campo" type="email" placeholder="Email">
-        <input class="cadastro__campo" type="password" placeholder="Senha">
-        <input class="cadastro__campo" type="password" placeholder="Confirmar senha">
+        <form id="registerForm">
 
-        <button class="cadastro__botao">Cadastrar</button>
+            <input id="username" class="cadastro__campo" type="text" placeholder="Nome completo" required>
+
+            <input id="dateOfBirth" class="cadastro__campo" type="date" placeholder="Data de nascimento" required>
+
+            <input id="email" class="cadastro__campo" type="email" placeholder="Email" required>
+
+            <input id="password" class="cadastro__campo" type="password" placeholder="Senha" required>
+
+            <input id="confirmPassword" class="cadastro__campo" type="password" placeholder="Confirmar senha" required>
+
+            <!-- opcional -->
+            <input id="profilePicture" type="hidden" value="">
+
+            <button class="cadastro__botao" type="submit">Cadastrar</button>
+        </form>
 
         <div class="cadastro__alternar">
             Já tem conta? <a class="cadastro__alternar-link" href="login.html">Entrar</a>
@@ -32,9 +42,35 @@
     </div>
 </main>
 
-
     <!-- FOOTER -->
     <footer class="rodape" id="rodape"></footer>
     <script src="layout.js"></script>
+    <script src="auth.js"></script>
+<script>
+document.querySelector(".cadastro__botao").addEventListener("click", async () => {
+    const usuario = {
+        profilePicture: "",
+        username: document.querySelectorAll(".cadastro__campo")[0].value,
+        dateOfBirth: document.querySelectorAll(".cadastro__campo")[1].value,
+        email: document.querySelectorAll(".cadastro__campo")[2].value,
+        password: document.querySelectorAll(".cadastro__campo")[3].value,
+        confirmPassword: document.querySelectorAll(".cadastro__campo")[4].value
+    };
+
+    try {
+        const resultado = await registerUser(usuario);
+        console.log("Registro OK:", resultado);
+
+        alert("Cadastro realizado com sucesso!");
+        window.location.href = "login.html";
+
+    } catch (error) {
+        alert("Erro ao cadastrar: " + error.message);
+    }
+});
+</script>
+
+
 </body>
+
 </html>

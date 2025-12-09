@@ -38,6 +38,29 @@
 
   <footer class="rodape" id="rodape"></footer>
   <script src="layout.js"></script>
+  <script type="module">
+    import { loginUser } from "../js/auth.js";
+
+    const form = document.getElementById("loginForm");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const payload = {
+            login: document.getElementById("login").value,
+            password: document.getElementById("password").value
+        };
+
+        const result = await loginUser(payload);
+        console.log(result);
+
+        if (result?.data?.token) {
+            localStorage.setItem("token", result.data.token); 
+            alert("Login realizado com sucesso!");
+        }
+    });
+</script>
+
 </body>
 
 </html>
