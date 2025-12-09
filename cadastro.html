@@ -45,29 +45,36 @@
     <!-- FOOTER -->
     <footer class="rodape" id="rodape"></footer>
     <script src="layout.js"></script>
-    <script src="auth.js"></script>
-<script>
-document.querySelector(".cadastro__botao").addEventListener("click", async () => {
-    const usuario = {
-        profilePicture: "",
-        username: document.querySelectorAll(".cadastro__campo")[0].value,
-        dateOfBirth: document.querySelectorAll(".cadastro__campo")[1].value,
-        email: document.querySelectorAll(".cadastro__campo")[2].value,
-        password: document.querySelectorAll(".cadastro__campo")[3].value,
-        confirmPassword: document.querySelectorAll(".cadastro__campo")[4].value
-    };
+    <script type="module" src="auth.js"></script>
+<script type="module">
+    import { registerUser } from "./auth.js";
 
-    try {
-        const resultado = await registerUser(usuario);
-        console.log("Registro OK:", resultado);
+    document.getElementById("registerForm").addEventListener("submit", async (e) => {
+        e.preventDefault(); // impede recarregar a página
 
-        alert("Cadastro realizado com sucesso!");
-        window.location.href = "login.html";
+        const usuario = {
+            profilePicture: "",
+            username: document.getElementById("username").value,
+            dateOfBirth: document.getElementById("dateOfBirth").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            confirmPassword: document.getElementById("confirmPassword").value
+        };
 
-    } catch (error) {
-        alert("Erro ao cadastrar: " + error.message);
-    }
-});
+        console.log("Enviando cadastro:", usuario);
+
+        try {
+            const resultado = await registerUser(usuario);
+
+            console.log("RESPOSTA DO BACKEND:", resultado);
+
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "login.html";
+
+        } catch (error) {
+            alert("Erro ao cadastrar: " + error.message);
+        }
+    });
 </script>
 
 

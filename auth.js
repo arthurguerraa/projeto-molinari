@@ -1,9 +1,9 @@
 const API_BASE = "https://fstats.onrender.com/api/v1/auth";
 
 // -------- REGISTRO --------
-async function registerUser(userData) {
+export async function registerUser(userData) {
     try {
-        const response = await fetch(`${API_BASE}/login`, {
+        const response = await fetch(`${API_BASE}/register`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(userData)
@@ -24,8 +24,7 @@ async function registerUser(userData) {
     }
 }
 
-
- async function loginUser(payload) {
+export async function loginUser(payload) {
     try {
         const response = await fetch(`${API_BASE}/login`, {
             method: "POST",
@@ -35,8 +34,7 @@ async function registerUser(userData) {
             body: JSON.stringify(payload)
         });
 
-        const data = await response.json();
-        return data;
+        return await response.json();
 
     } catch (error) {
         console.error("Erro ao fazer login:", error);
