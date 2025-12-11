@@ -7,7 +7,7 @@ const fakeRounds = [
   {
     rodada: 1,
     jogos: [
-      { casa: "PSG", fora: "Lyon", data: "10/08", placar: "3-1" },
+      { casa: "PSG", fora: "Saint-Étienne", data: "10/08", placar: "3-1" },
       { casa: "Marseille", fora: "Monaco", data: "10/08", placar: "1-2" },
       { casa: "Lille", fora: "Lens", data: "11/08", placar: "0-0" },
       { casa: "Nice", fora: "Rennes", data: "11/08", placar: "2-1" },
@@ -15,14 +15,14 @@ const fakeRounds = [
       { casa: "Nantes", fora: "Reims", data: "12/08", placar: "0-1" },
       { casa: "Montpellier", fora: "Brest", data: "12/08", placar: "2-2" },
       { casa: "Le Havre", fora: "Metz", data: "12/08", placar: "1-0" },
-      { casa: "Angers", fora: "Auxerre", data: "12/08", placar: "2-1" }
+      { casa: "Lorient", fora: "Clermont", data: "12/08", placar: "2-1" }
     ]
   },
 
   {
     rodada: 2,
     jogos: [
-      { casa: "Lyon", fora: "Marseille", data: "17/08", placar: null },
+      { casa: "Saint-Étienne", fora: "Marseille", data: "17/08", placar: null },
       { casa: "Monaco", fora: "PSG", data: "17/08", placar: null },
       { casa: "Lens", fora: "Nice", data: "18/08", placar: null },
       { casa: "Rennes", fora: "Lille", data: "18/08", placar: null },
@@ -30,7 +30,7 @@ const fakeRounds = [
       { casa: "Reims", fora: "Strasbourg", data: "19/08", placar: null },
       { casa: "Brest", fora: "Le Havre", data: "19/08", placar: null },
       { casa: "Metz", fora: "Montpellier", data: "19/08", placar: null },
-      { casa: "Auxerre", fora: "Angers", data: "19/08", placar: null }
+      { casa: "Clermont", fora: "Lorient", data: "19/08", placar: null }
     ]
   },
 
@@ -39,12 +39,12 @@ const fakeRounds = [
     jogos: [
       { casa: "PSG", fora: "Nice", data: "24/08", placar: null },
       { casa: "Marseille", fora: "Lille", data: "24/08", placar: null },
-      { casa: "Monaco", fora: "Lyon", data: "25/08", placar: null },
+      { casa: "Monaco", fora: "Saint-Étienne", data: "25/08", placar: null },
       { casa: "Rennes", fora: "Lens", data: "25/08", placar: null },
       { casa: "Strasbourg", fora: "Brest", data: "25/08", placar: null },
       { casa: "Nantes", fora: "Montpellier", data: "26/08", placar: null },
-      { casa: "Toulouse", fora: "Auxerre", data: "26/08", placar: null },
-      { casa: "Le Havre", fora: "Angers", data: "26/08", placar: null },
+      { casa: "Toulouse", fora: "Clermont", data: "26/08", placar: null },
+      { casa: "Le Havre", fora: "Lorient", data: "26/08", placar: null },
       { casa: "Metz", fora: "Reims", data: "26/08", placar: null }
     ]
   },
@@ -52,15 +52,15 @@ const fakeRounds = [
   {
     rodada: 4,
     jogos: [
-      { casa: "Lyon", fora: "PSG", data: "31/08", placar: null },
+      { casa: "Saint-Étienne", fora: "PSG", data: "31/08", placar: null },
       { casa: "Lille", fora: "Monaco", data: "31/08", placar: null },
       { casa: "Nice", fora: "Marseille", data: "01/09", placar: null },
       { casa: "Lens", fora: "Strasbourg", data: "01/09", placar: null },
       { casa: "Montpellier", fora: "Rennes", data: "01/09", placar: null },
       { casa: "Brest", fora: "Nantes", data: "02/09", placar: null },
       { casa: "Reims", fora: "Le Havre", data: "02/09", placar: null },
-      { casa: "Angers", fora: "Metz", data: "02/09", placar: null },
-      { casa: "Auxerre", fora: "Toulouse", data: "02/09", placar: null }
+      { casa: "Lorient", fora: "Metz", data: "02/09", placar: null },
+      { casa: "Clermont", fora: "Toulouse", data: "02/09", placar: null }
     ]
   },
 
@@ -70,11 +70,11 @@ const fakeRounds = [
       { casa: "PSG", fora: "Lille", data: "07/09", placar: null },
       { casa: "Marseille", fora: "Rennes", data: "07/09", placar: null },
       { casa: "Monaco", fora: "Nice", data: "08/09", placar: null },
-      { casa: "Strasbourg", fora: "Lyon", data: "08/09", placar: null },
+      { casa: "Strasbourg", fora: "Saint-Étienne", data: "08/09", placar: null },
       { casa: "Nantes", fora: "Toulouse", data: "08/09", placar: null },
       { casa: "Montpellier", fora: "Reims", data: "09/09", placar: null },
-      { casa: "Le Havre", fora: "Auxerre", data: "09/09", placar: null },
-      { casa: "Brest", fora: "Angers", data: "09/09", placar: null },
+      { casa: "Le Havre", fora: "Clermont", data: "09/09", placar: null },
+      { casa: "Brest", fora: "Lorient", data: "09/09", placar: null },
       { casa: "Metz", fora: "Lens", data: "09/09", placar: null }
     ]
   }

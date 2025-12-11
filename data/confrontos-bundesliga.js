@@ -7,15 +7,15 @@ const fakeRounds = [
   {
     rodada: 1,
     jogos: [
-      { casa: "Bayern de Munique", fora: "Werder Bremen", data: "16/08", placar: "3-1" },
+      { casa: "Bayern Munich", fora: "Werder Bremen", data: "16/08", placar: "3-1" },
       { casa: "Borussia Dortmund", fora: "Bayer Leverkusen", data: "16/08", placar: "2-2" },
       { casa: "RB Leipzig", fora: "Stuttgart", data: "17/08", placar: "1-0" },
-      { casa: "Eintracht Frankfurt", fora: "SC Freiburg", data: "17/08", placar: "1-1" },
+      { casa: "Eintracht Frankfurt", fora: "Freiburg", data: "17/08", placar: "1-1" },
       { casa: "Wolfsburg", fora: "Hoffenheim", data: "17/08", placar: "0-0" },
       { casa: "Union Berlin", fora: "Mainz 05", data: "18/08", placar: "2-1" },
       { casa: "Borussia Mönchengladbach", fora: "Augsburg", data: "18/08", placar: "1-0" },
-      { casa: "Colônia", fora: "Heidenheim", data: "18/08", placar: "0-1" },
-      { casa: "Bochum", fora: "Darmstadt", data: "18/08", placar: "1-1" }
+      { casa: "Köln", fora: "Heidenheim", data: "18/08", placar: "0-1" },
+      { casa: "Bochum", fora: "St. Pauli", data: "18/08", placar: "1-1" }
     ]
   },
 
@@ -24,13 +24,13 @@ const fakeRounds = [
     jogos: [
       { casa: "Werder Bremen", fora: "Borussia Dortmund", data: "23/08", placar: null },
       { casa: "Bayer Leverkusen", fora: "RB Leipzig", data: "23/08", placar: null },
-      { casa: "Stuttgart", fora: "Bayern de Munique", data: "24/08", placar: null },
-      { casa: "SC Freiburg", fora: "Wolfsburg", data: "24/08", placar: null },
+      { casa: "Stuttgart", fora: "Bayern Munich", data: "24/08", placar: null },
+      { casa: "Freiburg", fora: "Wolfsburg", data: "24/08", placar: null },
       { casa: "Hoffenheim", fora: "Union Berlin", data: "24/08", placar: null },
       { casa: "Mainz 05", fora: "Borussia Mönchengladbach", data: "25/08", placar: null },
-      { casa: "Augsburg", fora: "Colônia", data: "25/08", placar: null },
+      { casa: "Augsburg", fora: "Köln", data: "25/08", placar: null },
       { casa: "Heidenheim", fora: "Bochum", data: "25/08", placar: null },
-      { casa: "Darmstadt", fora: "Eintracht Frankfurt", data: "25/08", placar: null }
+      { casa: "St. Pauli", fora: "Eintracht Frankfurt", data: "25/08", placar: null }
     ]
   },
 
@@ -39,13 +39,13 @@ const fakeRounds = [
     jogos: [
       { casa: "Borussia Dortmund", fora: "Stuttgart", data: "30/08", placar: null },
       { casa: "RB Leipzig", fora: "Werder Bremen", data: "30/08", placar: null },
-      { casa: "Bayern de Munique", fora: "Bayer Leverkusen", data: "31/08", placar: null },
+      { casa: "Bayern Munich", fora: "Bayer Leverkusen", data: "31/08", placar: null },
       { casa: "Wolfsburg", fora: "Hoffenheim", data: "31/08", placar: null },
-      { casa: "Union Berlin", fora: "SC Freiburg", data: "31/08", placar: null },
+      { casa: "Union Berlin", fora: "Freiburg", data: "31/08", placar: null },
       { casa: "Borussia Mönchengladbach", fora: "Heidenheim", data: "01/09", placar: null },
-      { casa: "Colônia", fora: "Mainz 05", data: "01/09", placar: null },
+      { casa: "Köln", fora: "Mainz 05", data: "01/09", placar: null },
       { casa: "Bochum", fora: "Augsburg", data: "01/09", placar: null },
-      { casa: "Eintracht Frankfurt", fora: "Darmstadt", data: "01/09", placar: null }
+      { casa: "Eintracht Frankfurt", fora: "St. Pauli", data: "01/09", placar: null }
     ]
   },
 
@@ -53,29 +53,29 @@ const fakeRounds = [
     rodada: 4,
     jogos: [
       { casa: "Stuttgart", fora: "RB Leipzig", data: "06/09", placar: null },
-      { casa: "Werder Bremen", fora: "Bayern de Munique", data: "06/09", placar: null },
+      { casa: "Werder Bremen", fora: "Bayern Munich", data: "06/09", placar: null },
       { casa: "Bayer Leverkusen", fora: "Union Berlin", data: "07/09", placar: null },
-      { casa: "SC Freiburg", fora: "Borussia Dortmund", data: "07/09", placar: null },
-      { casa: "Hoffenheim", fora: "Colônia", data: "07/09", placar: null },
+      { casa: "Freiburg", fora: "Borussia Dortmund", data: "07/09", placar: null },
+      { casa: "Hoffenheim", fora: "Köln", data: "07/09", placar: null },
       { casa: "Mainz 05", fora: "Bochum", data: "08/09", placar: null },
       { casa: "Augsburg", fora: "Eintracht Frankfurt", data: "08/09", placar: null },
       { casa: "Heidenheim", fora: "Wolfsburg", data: "08/09", placar: null },
-      { casa: "Darmstadt", fora: "Borussia Mönchengladbach", data: "08/09", placar: null }
+      { casa: "St. Pauli", fora: "Borussia Mönchengladbach", data: "08/09", placar: null }
     ]
   },
 
   {
     rodada: 5,
     jogos: [
-      { casa: "Bayern de Munique", fora: "RB Leipzig", data: "13/09", placar: null },
+      { casa: "Bayern Munich", fora: "RB Leipzig", data: "13/09", placar: null },
       { casa: "Borussia Dortmund", fora: "Hoffenheim", data: "13/09", placar: null },
-      { casa: "Bayer Leverkusen", fora: "SC Freiburg", data: "14/09", placar: null },
+      { casa: "Bayer Leverkusen", fora: "Freiburg", data: "14/09", placar: null },
       { casa: "Union Berlin", fora: "Augsburg", data: "14/09", placar: null },
       { casa: "Wolfsburg", fora: "Mainz 05", data: "14/09", placar: null },
-      { casa: "Colônia", fora: "Stuttgart", data: "15/09", placar: null },
+      { casa: "Köln", fora: "Stuttgart", data: "15/09", placar: null },
       { casa: "Bochum", fora: "Heidenheim", data: "15/09", placar: null },
       { casa: "Eintracht Frankfurt", fora: "Borussia Mönchengladbach", data: "15/09", placar: null },
-      { casa: "Darmstadt", fora: "Werder Bremen", data: "15/09", placar: null }
+      { casa: "St. Pauli", fora: "Werder Bremen", data: "15/09", placar: null }
     ]
   }
 ];
