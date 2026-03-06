@@ -41,43 +41,11 @@
         </div>
     </div>
 </main>
-
     <!-- FOOTER -->
     <footer class="rodape" id="rodape"></footer>
     <script src="layout.js"></script>
     <script type="module" src="auth.js"></script>
-<script type="module">
-    import { registerUser } from "./auth.js";
-
-    document.getElementById("registerForm").addEventListener("submit", async (e) => {
-        e.preventDefault(); // impede recarregar a página
-
-        const usuario = {
-            profilePicture: "",
-            username: document.getElementById("username").value,
-            dateOfBirth: document.getElementById("dateOfBirth").value,
-            email: document.getElementById("email").value,
-            password: document.getElementById("password").value,
-            confirmPassword: document.getElementById("confirmPassword").value
-        };
-
-        console.log("Enviando cadastro:", usuario);
-
-        try {
-            const resultado = await registerUser(usuario);
-
-            console.log("RESPOSTA DO BACKEND:", resultado);
-
-            alert("Cadastro realizado com sucesso!");
-            window.location.href = "login.html";
-
-        } catch (error) {
-            alert("Erro ao cadastrar: " + error.message);
-        }
-    });
-</script>
-
-
+    <script type="module" src="register.js"></script>
 </body>
 
 </html>

@@ -14,52 +14,28 @@
 <body>
   <header id="cabecalho"></header>
   <main>
-  <div class="login__container">
-    <h1 class="login__titulo">Login</h1>
-    <p class="login__descricao">Entre para acessar as análises da plataforma</p>
+    <div class="login__container">
+      <h1 class="login__titulo">Login</h1>
+      <p class="login__descricao">Entre para acessar as análises da plataforma</p>
 
-    <input type="email" placeholder="Email" class="login__campo" />
-    <input type="password" placeholder="Senha" class="login__campo" />
+      <form id="loginForm">
+        <input id="login" type="email" placeholder="Email" class="login__campo" required />
+        <input id="password" type="password" placeholder="Senha" class="login__campo" required />
+        <button class="login__botao" type="submit">Entrar</button>
+      </form>
 
-    <a href="perfil.html">
-      <button class="login__botao">Entrar</button>
-    </a>
+      <div class="login__recuperar-senha">
+        <a href="esqueci-senha.html">Esqueci a senha</a>
+      </div>
 
-    <div class="login__recuperar-senha">
-      <a href="esqueci-senha.html">Esqueci a senha</a>
+      <div class="login__alternar-acesso">
+        Não tem conta? <a href="cadastro.html">Cadastre-se</a>
+      </div>
     </div>
-
-    <div class="login__alternar-acesso">
-      Não tem conta? <a href="cadastro.html">Cadastre-se</a>
-    </div>
-  </div>
-</main>
-
-
+  </main>
   <footer class="rodape" id="rodape"></footer>
   <script src="layout.js"></script>
-  <script type="module">
-    import { loginUser } from "../js/auth.js";
-
-    const form = document.getElementById("loginForm");
-
-    form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        const payload = {
-            login: document.getElementById("login").value,
-            password: document.getElementById("password").value
-        };
-
-        const result = await loginUser(payload);
-        console.log(result);
-
-        if (result?.data?.token) {
-            localStorage.setItem("token", result.data.token); 
-            alert("Login realizado com sucesso!");
-        }
-    });
-</script>
+  <script type="module" src="login.js"></script>
 
 </body>
 
